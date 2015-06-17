@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* STYLES RESETS */
+/* Page */
+html {
+	font-size: 100%;
+}
+body {
+	margin: 0;
+	padding: 20px 5px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 0.8em;
+	line-height: 1.25;
+	background-color: #CCC;
+}
+
+/* Paragraphes */
+p {
+	margin: .75em 0;
+	font-size: 1.2em;
+	color: #631F56;
+}
+
+
+/* Citations */
+
+cite {
+	font-style: italic;
+	font-size: 0.9em;
+	padding: 0px;
+	margin-top: 100px;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 .5em 0;
+	color: #631F56;
+}
+h1 {
+	font-size: 2em;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.2em;}
+h4 {font-size: 1em;}
+
+/* Listes */
+ul, ol {
+	margin: .75em 0 .75em 24px;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Liens */
+a {
+	color: #F00;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:link, a:visited {
+	color: #F00;
+	font-weight: bold;
+}
+a:hover, a:focus {
+	color: #000;
+}
+a:active {
+	color:#500;
+}
+
+a img {
+	border: none;
+}
+
+/* Divers éléments de type en-ligne */
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+	color: dimgray;
+}

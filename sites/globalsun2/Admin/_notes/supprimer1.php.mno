@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_liste_suppression" value="name:id;datatype:int,name:nom;datatype:blob,name:prenom;datatype:blob" />
+</info>

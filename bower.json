@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-pierreMrt",
+  "version": "1",
+  "authors": [
+    "Pierre Mrt <pierremartin.pro@gmail.com>"
+  ],
+  "description": "portfolio 2005",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~1.9.1"
+  }
+}

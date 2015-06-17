@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* MediaQuery */
+
+/* ----------------------------------------- SMARTPHONE  ---------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+	
+    h1 { font-size: 2.5em; line-height: 50px; }
+    h2 { font-size: 1em; }
+
+    /* ----- CACHER ELEMENTS -----*/
+    aside, #video_container, #horizontal, #pub1-CS6, #sroll, #animate2 { display: none !important; }
+
+    #articletop, #articlebody { width: 100%; max-width: inherit; }
+    
+    /* --------------- LOGO INTRO ----------------*/
+/*    .contenerLoad, .hideIntro { display: none !important; }*/
+/*
+    .contenerLoad { 
+        width: 350px; 
+        margin-left: -212px;
+    }   
+    .contenerLoad svg { 
+        width: 486px;
+        margin-left: -33px;
+    }   
+    
+*/
+    
+    /* --------------- PRE LOADING : OFF ----------------*/
+    #chargement { display: none; }
+    #chargement-infos { display: none; }
+    #container { visibility: visible !important; }
+
+    /* ---------------------- FLIPPER : LOGO ------------------------*/
+    .flip-container, .front, .back { width: 150px; }
+    .flip-container {
+        background-image: url(../img/logoFull.png);
+        background-repeat: no-repeat;
+        background-size: 150px;
+    }
+
+    .flipper { display: none; }
+
+    /* ------- MENU VERTICAL (qui deviens un horizontal) ----------*/
+    #vertical      { width: 100% !important; }
+    #vertical ul a { width: 100% !important; margin: 0 auto; }
+    #vertical .btn { padding: 10px 0 !important; }
+
+    /* -------------------- LIQUID SLIDER -----------------------*/
+    .ls-wrapper .liquid-slider .panel img {
+      width:80%;
+      height:auto;  
+      margin:0 5px;
+    }
+
+    /* ---------------FALSH --------------- */
+    #flash_noel, #anim_avatars, #anim_facebook, #anim_jeu { width: 100% !important; }
+    
+    /* --------------- FORMULAIRE ----------------*/
+    #mapgoogle form { margin-top: 0px; }
+    input           { height: 25px; }
+    
+    /* --------------- AUTRES ----------------*/
+
+    /* Passer à une seule colonne */
+    .element1, .element2 { float: none; width: auto; }
+
+    /*- COLONNES presentation (a propos)- */
+    .prt_colonne {
+        max-width: 90%;
+        min-height: 0;
+        padding: 0;
+        margin-bottom: -6px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .prt_colonnebas {
+        max-width: 90%;
+        min-height: 0;
+        display: block;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #prt_conteneur .bordure_D {
+        border-left: none;
+        border-right: none;
+    }
+    
+    /* --------------- FOOTER ----------------*/
+    footer a    { display: block; margin: 15px 0; }
+    footer span { display: none; }
+
+    /* ----- CACHER ELEMENTS -----*/
+    .hidden             { display: none !important; }
+    #contact_conteneur  { display: none !important; }
+
+
+}
+/* ----------------------------------------- IPAD  -----------------------------------------------------*/
+
+@media screen and (min-width: 481px) and (max-width: 959px) {
+
+    h1 { font-size: 4em; line-height: 70px; }
+    #articletop { max-width: none !important; float: none; }
+
+    /* ---- MENU VERTICAL (qui deviens un horizontal) ----*/
+    #vertical      { width: 100% !important; }
+    #vertical ul a { width: 60% !important; margin: 0 auto; }
+    #vertical .btn { padding: 10px 0 !important; }
+
+    /* -------------------- LIQUID SLIDER -----------------------*/
+    .ls-wrapper .liquid-slider .panel img{
+      width: 70%;
+      height:auto;  
+      margin:0 5px;
+    }
+    /*---------- COLONNES presentation (a propos)---------- */
+    .prt_colonne {
+        max-width: 90%;
+        min-height: 0;
+        padding: 0;
+        margin-bottom: -6px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .prt_colonnebas {
+        max-width: 90%;
+        min-height: 0;
+        display: block;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #prt_conteneur .bordure_D {
+        border-left: none;
+        border-right: none;
+    }
+
+    /* --------------- FOOTER ----------------*/
+    footer a     { display: block; margin: 15px 0; }
+    footer span  { display: none; }
+    
+    /* ----- CACHER ELEMENTS -----*/
+    .hidden   { display: none !important; }
+    #pub1-CS6 { display: none !important; }
+
+
+}
+/* --------------- 960px ET PLUS  -------------------*/
+@media screen and (min-width: 960px) { 
+    .bordure_bottom { border-bottom: none;}
+}
+
+@media (max-width:640px) and (orientation: landscape) and (-webkit-min-devicepixel-ratio:2) {
+    body { -webkit-text-size-adjust: 70%; }
+}
+
+
+
+
+/* -------- MENU HORIZONTAL  --------- */
+@media screen and (max-width: 980px) { 
+    #horizontal ul a, #horizontal ul a:link, #horizontal ul a:visited { font-size: 0.7em; }
+}
+@media screen and (max-width: 780px) { 
+    #horizontal ul a, #horizontal ul a:link, #horizontal ul a:visited { font-size: 0.6em; }
+}
+
+/* -------- WEB ZONE  --------- */
+@media screen and (max-width: 910px) { 
+    .siteContainer .siteText       { margin-top: 35px; }
+    .siteContainer .siteText h2    { font-size: 1em; }
+    .siteContainer .siteText p     { font-size: 0.8em; }
+    .siteContainer .siteText span  { font-size: 0.6em; }
+}
+/* SCALE POUR DIMINER LES DIMENSIONS DES IMAGES */
+@media screen and (max-width: 700px) { 
+    .siteContainer {  }
+}
+@media screen and (max-width: 480px) { 
+    .siteContainer .siteText h2    { font-size: 0.7em; }
+    .siteContainer .siteText p     { font-size: 0.7em; }
+    .siteContainer .siteText span  { font-size: 0.55em; }
+    
+    .siteContainer .siteText       { margin-top: 22px; }
+}
+
+
+
+
+

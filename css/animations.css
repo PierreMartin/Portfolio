@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------------------------------- FLIPPER : LOGO ------------------------------------------*/
+
+
+/* conteneur entier */
+.flip-container {
+	display: inline-block;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	perspective: 1000;
+}
+
+/* pour retourner le volet en hover */
+.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.flip-container, .front, .back {
+	width: 220px;
+	height: 220px;
+}
+
+/* vitesse ici */
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	
+	position: relative;
+}
+
+/* cacher les dossier du volet back */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front */
+.front {
+	z-index: 2;
+}
+
+/* back */
+.back {
+	background-image: url(../img/logoFullBack.png);
+	background-repeat: no-repeat;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.back-title {
+	font-weight: bold;
+	color: #366;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+	font-size: 1.2em;
+}
+
+.back a {
+	position: absolute;
+	bottom: 0px; top: 0px;
+	left: 0; right: 0;
+    
+	text-align: center;
+	font-size: 0.9em;
+	text-shadow: none;
+    color: white;
+}
+.back a:hover { color: #d1c5c5; }
+
+.flip-container img { max-width: 100%; }
+
+/* --------------------------------------- FLIPPER : CONTACT ----------------------------------------------*/
+#contact_conteneur {
+	width: 100%;
+	text-align:center;	
+}
+
+/* conteneur entier */
+.flip-containerct {
+	display: inline-block;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	perspective: 1000;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+/* pour retourner le volet en hover */
+.flip-containerct:hover .flipper, .flip-containerct.hover .flipper, #flip-toggle.flip .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.flip-containerct, .frontct, .backct {
+	width: 250px;
+	height: 150px;
+}
+
+/* cacher les dossier du volet back */
+.frontct, .backct {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front */
+.frontct {
+	z-index: 2;
+}
+
+/* back */
+.backct {
+	background-color: #2c3f52;
+	background-repeat: no-repeat;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.backct-title {
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #4ED6B7;
+	font-size: 1.15em;
+}
+
+.backct p {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 0;
+	font-size: 0.9em;
+	color:#fff;
+	text-shadow: none;
+}
+
+/* --------------- BOUTONS NORMAL ----------------*/
+
+a.boutonclick {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	color: #444;
+	border: 1px solid #ccc;
+	background-color: #999; /* BG de sécurité */
+	background: #b7deed; /* Old browsers */
+	background: -moz-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b7deed), color-stop(50%,#71ceef), color-stop(51%,#21b4e2), color-stop(100%,#b7deed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+	/*  */
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	/*  */
+	-moz-box-shadow: 0px 2px 3px #000000;
+	-webkit-box-shadow: 0px 2px 3px #000000;
+	box-shadow: 0px 2px 3px #000000;
+	/*  */
+	text-shadow:1px 1px 2px #c7c7c7;
+	margin-top: 30px;
+	margin-right: 15px;
+	margin-bottom: 3px;
+	margin-left: 15px;
+	padding: 10px;
+} 
+a.boutonclick:hover, a.boutonclick:focus {
+	border: 1px solid #000;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+} 
+a.boutonclick:active {
+	border: 1px solid #CCC;
+} 
+a.rss:before {
+	content: url(data:image/gif;base64,R0lGODlhDwAPAOYAAP90M//oy/+2Wf/Svv9vMP+JKP+6hv+pQP/nzf/RpP/8+v92Nv+qXP+qVv/ezf+gO/93Lv+gUf/Krf/IqP+GMv+cSf+0j//u5f/z6v+OL/+GP//Lk//Vp/+0kf/Lp//Rtf/Yxf+8df+fVf9+Qf/Yrv/Rsf/Cl/+9nv/Inf98L//Ikv+mVf/x4/+aLv/Mq//Xvv+2i/+OTP+LR//cyP/o0f/Wu//79//Tpv+uXf/s2//+/P+HRv/59f/u4P+6lf+sbP+AJ/9pI/+/n/98Pv/69f99Kf/bv/+xiv+/if+TKP+DJP9yH/9tHv+IJf9kG/99Iv+YKf9oHf+OJ/94If9gGv+iLP+gLP+cK////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAPAA8AAAesgAECVYSFhlUCAQdWjI2OjQdXkpOUlVBQDxskCBwhLZegUEkNCSo3NFhYLDhJra1SsLEMOVhEK7FSTboVERlNBUg6PQW6TUoiKEY8NgZKSgZYP85KT9VPFCVYJk9AGB7WU+HiLwpFUzUu4ksxMx8pSxpYMksTMEv3TA6pPkxMFxBMJOzoxyQKiFRHokQRotCCQoUAFpzoEMSJkyEWR1h0AmAAASogQ4qkQmBAIAA7);
+	margin: 0 5px 0 0;
+	position: relative;/* nécessaire pour caler l'image / texte*/
+	top: 2px;
+	left: -3px;
+}
+
+a.download:before {
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTM5jWRgMAAAAVdEVYdENyZWF0aW9uIFRpbWUAMi8xNy8wOCCcqlgAAAQRdEVYdFhNTDpjb20uYWRvYmUueG1wADw/eHBhY2tldCBiZWdpbj0iICAgIiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDQuMS1jMDM0IDQ2LjI3Mjk3NiwgU2F0IEphbiAyNyAyMDA3IDIyOjExOjQxICAgICAgICAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4YXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPgogICAgICAgICA8eGFwOkNyZWF0b3JUb29sPkFkb2JlIEZpcmV3b3JrcyBDUzM8L3hhcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHhhcDpDcmVhdGVEYXRlPjIwMDgtMDItMTdUMDI6MzY6NDVaPC94YXA6Q3JlYXRlRGF0ZT4KICAgICAgICAgPHhhcDpNb2RpZnlEYXRlPjIwMDgtMDMtMjRUMTk6MDA6NDJaPC94YXA6TW9kaWZ5RGF0ZT4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2UvcG5nPC9kYzpmb3JtYXQ+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDUdUmQAAAE7SURBVDiNpZM7TsNAEIb/8WPNwwJKh5qGBiNxAiqa+AjQ5iCufQBaOILTUHEBIyEaGmoIVAkyEHshQ7HedSzbUiSvtNqZ0fzfzmhniZkxZFmD1AAcbRCRCQYpdZY1i9gk6cqdrkQAuD1n5H/K9m3g8p4683oBH7/AolT2vujLWgMEKaUAxtp/l8C8AizJ5OjWpgAiACDdy2hq8dVZs/XFd1XBTvPWmwfC23hFDQARIUiJL05qSP6lTn+3Ft89EWYR17p1gC7z9FjFlp8qtrWn/MdnMi/RC9CQwyPGaq5i1gHj9YU6n7EToCHbvrJ/8uYMbATQEKAtbgAqP2qpN1jMnOo5GGVZdu26LjzPgxACQgh4ngdmhpSytcMwnJgKkiRhKSWKokBZluYsSzVJjuPAtm2ztR/HMdHQ7/wPj7WgYLMWxPQAAAAASUVORK5CYII=);
+	margin: 0 5px 0 0;
+	position: relative;
+	top: 2px;
+	left: -3px;
+}
+
+
+/* --------------- TOP (haut de page) ----------------*/
+
+#hautdepage {
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+	z-index: 20;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fa-arrow-circle-up {	
+	height: 70px;
+	width: 55px;
+    font-size: 55px;
+    color: white;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    
+    -webkit-transition: all .25s cubic-bezier(0.31,-0.105,0.43,1.59);
+            transition: all .25s cubic-bezier(0.31,-0.105,0.43,1.59);
+}
+
+.fa-arrow-circle-up:hover { 
+    color: #ff9595; 
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+
+
+/* --------------- ANIMATION 2 (souris) ----------------*/
+
+#animate2 { /* animation */
+	 -webkit-animation: scroll1 1s infinite linear;
+	    -moz-animation: scroll1 1s infinite linear;
+	      -o-animation: scroll1 1s infinite linear;
+	         animation: scroll1 1s infinite linear;
+}
+
+@-webkit-keyframes scroll1 {
+    0% { -webkit-transform: translateY(0px); }
+    50% { -webkit-transform: translateY(15px); }
+    100% { -webkit-transform: translateY(0px); }
+}
+
+@-moz-keyframes scroll1 {
+    0% { -moz-transform: translateY(0px); }
+    50% { -moz-transform: translateY(15px); }
+    100% { -moz-transform: translateY(0px); }
+}
+
+@-o-keyframes scroll1 {
+    0% { -o-transform: translateY(0px); }
+    50% { -o-transform: translateY(15px); }
+    100% { -o-transform: translateY(0px); }
+}
+
+@keyframes scroll1 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0px); }
+}
+
+
+/* --------------- LES CLASSES ----------------*/
+
+.radius {
+	-webkit-border-radius: 20px;
+            border-radius: 20px;
+}
+.shadow {
+	-webkit-box-shadow: 0px 4px 28px 0px rgba(0,0,0,0.46);
+	   -moz-box-shadow: 0px 4px 28px 0px rgba(0,0,0,0.46);
+	        box-shadow: 0px 4px 28px 0px rgba(0,0,0,0.46);
+}
+.shadow2 {
+	-webkit-box-shadow: 2px 2px 2px 4px rgba(255,255,255,0.46);
+	   -moz-box-shadow: 2px 2px 2px 4px rgba(255,255,255,0.46);
+	        box-shadow: 2px 2px 2px 4px rgba(255,255,255,0.46);
+}
+.texteshadow  { text-shadow:0px 1px 2px #000000; }
+.texteshadow2 { text-shadow:1px 1px 1px #d7ded2; }
+

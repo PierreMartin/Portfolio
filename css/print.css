@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document pour l'impression */
+
+header, nav, footer, aside {
+	display: none;
+}
+article:after {
+	content:"document imprimé à partir du site IMM PRIVEE"
+}
+#page {
+	width: 18cm;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 35px;
+	text-align: center;
+	color: #F00;
+}
+h2 {
+	text-align: center;
+	color: #33F
+}
+h3, h4, h5 {
+	text-align: center;
+	color: #930;
+}
+
+/* LOGO */
+
+header {
+	text-align: center;
+}
+article:before {
+	content: url(../img/logoprint.png);
+	margin-bottom: -30px;
+}

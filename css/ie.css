@@ -1,0 +1,25 @@
+body { background-color: #444; }
+
+.ie_contener { 
+	text-align: center; 
+	border: solid 2px black;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 80px;
+	padding: 15px;
+	background-color: #fff;
+}
+
+.ie_btn, .ie_btn:link, .ie_btn:visited { 
+	background-color: #e95b29; 
+	color: white;
+	padding: 10px 20px;
+}
+.ie_btn:hover, .ie_btn:focus { 
+	background-color: #12181c; 
+}
+.ie_btn:active { 
+	background-color: #343f44; 
+}
+
+.ie_note { font-style: italic; font-size: 10px; margin-top: 20px; }

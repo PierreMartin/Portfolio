@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:480px){
+	#gauche, #droite {width:auto;}
+	a#logo {display:block;}
+	nav ul {
+		padding:0;
+		margin:0;
+	}
+	header{
+		background-size:contain;
+		background-repeat:no-repeat;
+		height:auto;
+		width:auto;
+		padding:10%;
+		}
+	header h1 {
+		display:block !important;
+		float:none;
+		padding:0;
+		line-height:120%;
+		font-size:120%;
+	}
+	nav li a {
+		display: block;
+		padding: 5px;
+		margin:3px;
+		border: thin solid #FFAC32;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		border-radius:10px;
+		text-align:center;
+}
+}
+@media screen and (min-width: 481px) and (max-width:960px){
+	#gauche, #droite {width:auto;	}
+	a#logo {display:block;}
+	nav ul {
+		padding:0;
+		margin:0;
+	}
+	header h1 {
+		font-size:200%;
+	}
+}
+@media screen and (min-width:961px){
+	/* par utile sur ce site */
+}
+@media print {
+	nav {display:none;}
+	header {
+		height:auto;
+	}
+	header h1{
+		padding:0;
+		margin:10px;
+	}
+	body:before{
+	content:url(../img/logoseul.png);
+	}
+	body:after{
+	content:"Cette page provient du site http://www.GlobalSun.com";
+	}
+}

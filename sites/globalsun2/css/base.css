@@ -1,0 +1,111 @@
+body{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	line-height: 1.5em;
+	overflow: scroll;
+}
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+#page {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+a#logo {
+	background-image: url(../img/logo.png);
+	display: inline-block;
+	height: 30px;
+	width: 150px;
+	text-indent: -2000px;
+}
+a#logo:link, a#logo:visited {
+	background-position: top;
+}
+a#logo:hover {
+	background-position: center;
+}
+a#logo:active {
+	background-position: bottom;
+}
+header {
+	background-image: url(../img/promenade.jpg);
+	height: 210px;
+}
+nav a:link, nav a:visited {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: medium;
+	color: #0CF;
+	text-decoration: none;
+	margin-left: 20px;
+}
+article {
+	padding-left: 30px;
+}
+nav li {
+	display: inline;
+	list-style-type: none;
+}
+nav ul {
+	padding-left: 350px;
+	margin-top: -20px;
+}
+h2 {
+	color: #F00;
+	font-size: small;
+}
+h1 {
+	color: #FFF;
+	font-size: 45px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	padding-top:150px;
+	padding-right:50px;
+	float:right;
+	text-shadow: 3px 3px 5px #0a050a; 
+    filtre: ombre portée (color = #0a050a, OFFX =3, = Offy3);
+}
+h3 {
+	font-size: small;
+	color: #999;
+}
+.gris {
+	font-style: italic;
+	color: #999;
+}
+
+article div {
+	float: left;
+}
+#gauche{
+	width: 34%;
+}
+#droite {
+	width: 64%;
+	padding-left:2%;
+}
+footer{
+	clear:both;
+	padding-right: 30px;
+}
+footer a.bt {
+	background-image: url(../img/reserver.png);
+	text-indent: -2500px;
+	display: block;
+	height: 50px;
+	width: 190px;
+	float:right;
+}
+footer a.bt:link, footer a.bt:visited {
+	background-position: top;	
+}
+footer a.bt:hover {
+	background-position: center;
+}
+footer a.bt:active{
+	background-position: bottom;
+}
+label {
+	width: 120px;
+	display: inline-block;
+}

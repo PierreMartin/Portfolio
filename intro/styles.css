@@ -1,0 +1,153 @@
+/* Cache les logos au chargement de la page (jquery l'affichera apres) */
+.contenerLoad { display: none; }
+
+svg { pointer-events: none; }
+
+.hideIntro { 
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.contenerLoad { 
+    position: absolute; 
+    z-index: 99999999;
+    left: 50%;
+    margin-left: -252px;
+    width: 500px;
+    overflow: hidden;
+}
+
+
+.logoImgHaut, .logoImgBas { position: absolute; opacity: 0; }
+
+.logoImgHaut {  
+    top: 23.3%;
+    left: 27%;
+    width: 231px;
+}
+
+.logoImgBas {  
+    top: 49.1%;
+    left: 27%;
+    width: 231px;
+}
+
+
+/*
+.logoImgHaut, .logoImgBas, .contenerLoad svg {
+    -webkit-transition: opacity 2s;
+            transition: opacity 2s;
+}
+*/
+
+
+/****************** SVG  *******************/
+           
+/* STYLE SVG :*/
+svg path {
+	fill: none;
+/*	stroke-width: 120;*/
+}
+
+/* SVG TOP :*/
+svg .svgAnim1 {
+    stroke-dasharray: 1665;
+    stroke-dashoffset: 1665;
+
+            animation: svgAnim1 1s 2s ease-in;
+    -webkit-animation: svgAnim1 1s 2s ease-in;
+    
+            animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+}
+
+@keyframes svgAnim1 { to { stroke-dashoffset: 0; } }
+@-webkit-keyframes svgAnim1 { to { stroke-dashoffset: 0; } }
+
+/* SVG BOTTOM :*/
+svg .svgAnim2 {
+    stroke-dasharray: 1665;
+    stroke-dashoffset: 1665;
+
+            animation: svgAnim2 1s 2s ease-in;
+    -webkit-animation: svgAnim2 1s 2s ease-in;
+    
+            animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+}
+
+@keyframes svgAnim2 { to { stroke-dashoffset: 0; } }
+@-webkit-keyframes svgAnim2 { to { stroke-dashoffset: 0; } }
+
+/* P1 :*/
+svg .p1HautPath {
+    stroke-dasharray: 222;
+    stroke-dashoffset: 222;
+
+            animation: p1HautPath 0.6s 1s ease-in;
+    -webkit-animation: p1HautPath 0.6s 1s ease-in;
+    
+            animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+}
+
+@keyframes p1HautPath { to { stroke-dashoffset: 0; } }
+@-webkit-keyframes p1HautPath { to { stroke-dashoffset: 0; } }
+
+
+/* P2 :*/
+svg .p1BasPath {
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280;
+
+            animation: p1BasPath 0.6s 1s ease-in;
+    -webkit-animation: p1BasPath 0.6s 1s ease-in;
+    
+            animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+}
+
+@keyframes p1BasPath { to { stroke-dashoffset: 0; } }
+@-webkit-keyframes p1BasPath { to { stroke-dashoffset: 0; } }
+
+/* P3 :*/
+svg .p2HautPath {
+    stroke-dasharray: 574;
+    stroke-dashoffset: 574;
+
+            animation: p2HautPath 0.6s 1.6s ease-in;
+    -webkit-animation: p2HautPath 0.6s 1.6s ease-in;
+    
+            animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+}
+
+@keyframes p2HautPath { to { stroke-dashoffset: 0; } }
+@-webkit-keyframes p2HautPath { to { stroke-dashoffset: 0; } }
+
+/* P4 :*/
+svg .p2BasPath {
+    stroke-dasharray: 186;
+    stroke-dashoffset: 186;
+
+            animation: p2BasPath 0.6s 1.6s ease-in;
+    -webkit-animation: p2BasPath 0.6s 1.6s ease-in;
+    
+            animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+}
+
+@keyframes p2BasPath { to { stroke-dashoffset: 0; } }
+@-webkit-keyframes p2BasPath { to { stroke-dashoffset: 0; } }
+
+
+
+
+
+
+
+

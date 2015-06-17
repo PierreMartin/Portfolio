@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+nav {
+    display: inline;
+    zoom: 1;
+}
+*/
+
+#horizontal ul li {
+	display: inline;
+	zoom: 1;
+	float: left;
+}
+
+/*
+#vertical ul a, #vertical ul a:link, #vertical ul a:visited {
+	width: 100px; 
+}*/

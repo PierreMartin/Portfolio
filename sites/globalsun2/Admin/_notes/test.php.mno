@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:id;datatype:int,name:nom;datatype:blob,name:prenom;datatype:blob,name:email;datatype:blob,name:sexe;datatype:blob,name:date_insccription;datatype:date" />
+</info>

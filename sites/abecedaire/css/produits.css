@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+#article h1 +p {
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+}
+#article :last-child {
+	font-weight: bold;
+	color: #F00;
+}
+#article img {
+	float: right;
+	margin: 0px;
+}

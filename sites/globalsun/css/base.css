@@ -1,0 +1,163 @@
+@charset "utf-8";
+body {
+	background-color: #E1BDA6;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#page {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+#header_logo {
+	height: 50px;
+	width: 300px;
+	float: left;
+}
+a#logo {
+	height: 30px;
+	width: 200px;
+	display: block;
+	text-indent: -2000px;
+	background-image: url(../img/logohover.gif);
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+a#logo:link, a#logo:visited {
+	background-position: top;
+}
+a#logo:hover {
+	background-position: center;
+}
+a#logo:active {
+	background-position: bottom;
+}
+#nav {
+	float: right;
+	width: 550px;
+	text-align: center;
+	height: 50px;
+}
+#nav ul{
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#nav li{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	margin-right: 2px;
+	margin-left: 10px;
+	display: inline-block;
+	float: left;
+}
+#nav a {
+	text-decoration: none;
+	color: #72b2cd;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+}
+#nav a:link, #nav a:visited {
+	color: #72b2cd;
+}
+#nav a:hover {
+	color: #000;
+}
+#nav a:active {
+	color: #810104;
+}
+
+
+#header {
+	clear: both;
+	height: 300px;
+	padding-top: 1px;
+	background-repeat: no-repeat;
+}
+#header h1 {
+	text-align: right;
+	color: #FFF;
+	font-size: 60px;
+	margin-right: 30px;
+	margin-top: 220px;
+}
+
+#article {
+	clear: both;
+	min-height:400px;
+}
+#article div {
+	width: 45%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+#article h2 {
+	font-size: 14px;
+	color: #F00;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#article ul, #article li {
+	list-style-type: square;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+#article p {
+	font-size: 12px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: justify;
+	line-height: 1.2em;
+}
+#article cite {
+	color: #666;
+	font-size: 12px;
+	text-align: justify;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+	display: block;
+	margin-top: 20px;
+}
+
+
+#footer {
+	clear: both;
+	height: 60px;
+	margin-top: 25px;
+}
+a#bouton, a#bouton2  {
+	display: block;
+	width: 200px;
+	height: 38px;
+	margin-left: 700px;
+	background-image: url(../img/bt_hover.gif);
+	text-indent: -2000px;
+}
+a#bouton:link, a#bouton:visited, a#bouton2:link, a#bouton2:visited {
+	background-position: top;
+}
+a#bouton:hover, a#bouton2:hover {
+	background-position: center;
+}
+a#bouton:active, a#bouton2:active {
+	background-position: bottom;
+}
+
+a#bouton2  {
+	background-image: url(../img/bt_hover_env.gif);
+}

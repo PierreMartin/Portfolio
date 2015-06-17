@@ -1,0 +1,16 @@
+@charset "utf-8";
+header {
+	background: url(../img/admin.png);
+}
+.vert {
+	background: #A1EFB1;
+}
+p {
+	margin: 0px;
+}
+td img {
+	margin-top: 3px;
+}
+.lientd {
+	width: 70px;
+}
