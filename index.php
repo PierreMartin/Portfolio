@@ -740,14 +740,16 @@ if ( !isset($_SESSION['messageInfo']) ) {
         <h1>A propos</h1>
     	<article class="articlebody">
    	    	<section style="text-align: center;">
-                <p class="textestyle1">Je m'appelle <span class="textestyle4">Pierre MARTIN</span>, j'ai 27 ans.
-				<br>je suis <span class="textestyle4">designer créatif</span> et <span class="textestyle4">développeur intéractif front-end</span>.
-				<br>je suis récemment titulaire d'un titre professionnel de niveau III en art graphique/Webdesign.
-				<br><br>Actuellement en préparation d'un titre professionnel de niveau II « Développeur Multimédia » à l’Ecole Multimédia, je suis à la recherche d'une entreprise en alternance à partir du mois d'aout 2015.</p>
+                <p class="textestyle1">Je m'appelle <span class="textestyle4">Pierre MARTIN</span>, j'ai 28 ans.
+                    <br>je suis <span class="textestyle4">designer créatif</span> et <span class="textestyle4">développeur intéractif front-end</span>.
+                    <br>Reçu avec succès au sortir d’une école <span class="textestyle4">« Développeur Multimédia »</span>, je possède une expérience professionnelle effectuée en alternance sur Symfony, Laravel, jQuery...
+                    <br>Passionné, autonome, je possède une bonne culture web et j’ai l’esprit d’équipe que j’ai acquis en travaillant en startup en faisant face à de nombreux nouveaux challenges technologiques.
+                    <br>
+                </p>
 
                 <hr><br>
 
-                <a class="btn btn_graph" href="formation.pdf" target="_blank" id="websites2" title="Contenu de ma fomation">voir le contenu de ma formation !</a>
+                <a class="btn btn_graph" href="formation.pdf" target="_blank" id="websites2" title="Contenu de ma fomation">Voir le contenu de ma précédente formation !</a>
             </section>
 
 		</article>
