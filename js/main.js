@@ -10,14 +10,14 @@ $(document).ready(function() {
          $.Velocity
             .RegisterEffect("fadeOutSvg", {
                 defaultDuration: 200,
-                calls: [ 
+                calls: [
                     [ { opacity: [0, 1] } ],
                 ]
             })
-         
+
             .RegisterEffect("animationLogoHaut", {
                 defaultDuration: 1500,
-                calls: [ 
+                calls: [
                     [ { translateY: -1000               }, 0 ],
                     [ { opacity   : [1, 0]              }, 0 ],
                     [ { translateY: 0                   }, 0.150 ],
@@ -27,7 +27,7 @@ $(document).ready(function() {
             })
              .RegisterEffect("animationLogoBas", {
                 defaultDuration: 1500,
-                calls: [ 
+                calls: [
                     [ { translateY: 1000                }, 0 ],
                     [ { opacity   : [1, 0]              }, 0 ],
                     [ { translateY: 0                   }, 0.150 ],
@@ -35,24 +35,24 @@ $(document).ready(function() {
                     [ { translateY: 0,   scaleY: 1      }, 0.100 ],
                 ]
             })
-         
+
 //            .RegisterEffect("animationLogoHautEnd", {
 //                defaultDuration: 800,
-//                calls: [ 
+//                calls: [
 //                    [ { translateY: -1000               } ],
 //                    [ { opacity   : [0, 1]              } ],
 //                ]
 //            })
 //            .RegisterEffect("animationLogoBasEnd", {
 //                defaultDuration: 1000,
-//                calls: [ 
+//                calls: [
 //                    [ { translateY: 1000                } ],
 //                    [ { opacity   : [0, 1]              } ],
 //                ]
 //            })
              .RegisterEffect("hideIntro", {
                 defaultDuration: 1200,
-                calls: [ 
+                calls: [
                     [ { backgroundColor: '#ffffff' }, 0 ],
                     [ { backgroundColor: '#dba8aa' }, 1.5 ],
                     [ { backgroundColor: '#8bbabc' }, 1.5 ],
@@ -61,27 +61,27 @@ $(document).ready(function() {
                 ]
             });
 
-        // APPELLE DES FONCTION  
+        // APPELLE DES FONCTION
         $(".contenerLoad svg").velocity("fadeOutSvg",   { delay: 3500 } );
-    
+
         $(".logoImgHaut").velocity("animationLogoHaut", { delay: 700 } );
         $(".logoImgBas") .velocity("animationLogoBas",  { delay: 700 } );
-        
+
 //        $(".logoImgHaut").velocity("animationLogoHautEnd", { delay: 750 } );
 //        $(".logoImgBas") .velocity("animationLogoBasEnd",  { delay: 750 } );
-    
+
         // REMOVE DIV :
         $(".hideIntro").velocity("hideIntro").fadeOut(800, function(){
             $(this).remove();
         });
-        
+
         $(".contenerLoad").delay(4000).fadeOut(400, function(){
             $(this).remove();
         });
 
-    
+
     // VELOCITY 2 : EFFETS SUR LES LI DE LA NAV
-    $('#vertical li').css("opacity","0"); 
+    $('#vertical li').css("opacity","0");
 
     $.Velocity
         .RegisterEffect("animationNav", {
@@ -92,22 +92,22 @@ $(document).ready(function() {
         });
 
     $("#vertical li").velocity("animationNav", { delay: 6000, stagger: 200 } );
-    
+
 
 });
 
 
 // HIDE / SHOW LA NAV AU SCROLL :
-$('#hautdepage, #horizontal').css("display","none"); 
+$('#hautdepage, #horizontal').css("display","none");
 
-$(window).scroll(function() {  
-    var posScroll = $(document).scrollTop();  
-    
-    if (posScroll >= 830)  
-        $('#hautdepage, #horizontal').fadeIn(600);  
-    else  
-        $('#hautdepage, #horizontal').fadeOut(600);  
-});  
+$(window).scroll(function() {
+    var posScroll = $(document).scrollTop();
+
+    if (posScroll >= 830)
+        $('#hautdepage, #horizontal').fadeIn(600);
+    else
+        $('#hautdepage, #horizontal').fadeOut(600);
+});
 
 
 // GESTION DU GLISSEMENT LORS DU CLIQUE (SMOOTH SCROLL) :
@@ -127,21 +127,21 @@ $(window).scroll(function() {
 var aChildren = $(".link-hover").children();
 var aArray = [];
 
-for (var i = 0; i < aChildren.length; i++) {    
+for (var i = 0; i < aChildren.length; i++) {
     var aChild  = aChildren[i];
     var ahref   = $(aChild).attr('href');
     aArray.push(ahref);
 }
 
 $(window).scroll(function(){
-    var windowPos       = $(window).scrollTop(); 
-    var windowHeight    = $(window).height(); 
+    var windowPos       = $(window).scrollTop();
+    var windowHeight    = $(window).height();
     var docHeight       = $(document).height();
 
     for (var i = 0; i < aArray.length; i++) {
         var theID       = aArray[i];
-        var divPos      = $(theID).offset().top; 
-        var divHeight   = $(theID).height(); 
+        var divPos      = $(theID).offset().top;
+        var divHeight   = $(theID).height();
         if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
             $("a[href='" + theID + "']").addClass("nav-active");
         } else {
@@ -173,14 +173,14 @@ $(window).scroll(function (){
         // Scrolle
         if (top >= this_top && top <= this_bottom) {
             percent = ((top - this_top) / (height - contener_bar_height)) * 100;
-            if (percent >= 100) { 
-                percent = 100; 
+            if (percent >= 100) {
+                percent = 100;
                 $(".containerBar .bar:eq("+i+") i").css("color", "#fff");
                 $(".containerBar .bar:eq("+i+") .check").css("opacity", "1");
             }
             else {
-                $(".containerBar .bar:eq("+i+") i").css("color", "#3F3D3D");	  				  		
-                $(".containerBar .bar:eq("+i+") .check").css("opacity", "0");	
+                $(".containerBar .bar:eq("+i+") i").css("color", "#3F3D3D");
+                $(".containerBar .bar:eq("+i+") .check").css("opacity", "0");
             }
         }
         else if (top > this_bottom) {
@@ -195,7 +195,7 @@ $(window).scroll(function (){
 
 
 $(document).ready(function(){
-	
+
 	// SLIDER LIQUIDE
 	$(function () {
 		$("#slider-id").liquidSlider({
@@ -204,51 +204,17 @@ $(document).ready(function(){
 			autoSlide: true,
 			autoSlideInterval: 4500,
 			pauseOnHover: true,
-			
+
 			dynamicArrows: true,
 			dynamicArrowsGraphical: true,
 			hoverArrows: true,
-			
+
 			dynamicTabs: true,
 			dynamicTabsAlign: "center",
 			preloader: true,
 			responsive: true,
 			mobileNavigation: true,
-			
-			autoHeight:false,
-		    slideEaseFunction:'animate.css',
-		    slideEaseDuration:1000,
-		    heightEaseDuration:1000,
-		    animateIn:"fadeInDown",
-		    animateOut:"bounceOutUp",
-		    callback: function() {
-				var self = this;
-				$('.slider-6-panel').each(function() {
-			  	$(this).removeClass('animated ' + self.options.animateIn);
-				});
-				}
-			});
-	});
-	
-	// SLIDER LIQUIDE 3
-	$(function () {
-		$("#slider-id3").liquidSlider({
-			includeTitle:false,
-			minHeight: 720,
-			autoSlide: true,
-			autoSlideInterval: 4500,
-			pauseOnHover: true,
-			
-			dynamicArrows: true,
-			dynamicArrowsGraphical: true,
-			hoverArrows: true,
-			
-			dynamicTabs: true,
-			dynamicTabsAlign: "center",
-			preloader: true,
-			responsive: true,
-			mobileNavigation: true,
-			
+
 			autoHeight:false,
 		    slideEaseFunction:'animate.css',
 		    slideEaseDuration:1000,
@@ -264,7 +230,41 @@ $(document).ready(function(){
 			});
 	});
 
-	
+	// SLIDER LIQUIDE 3
+	$(function () {
+		$("#slider-id3").liquidSlider({
+			includeTitle:false,
+			minHeight: 720,
+			autoSlide: true,
+			autoSlideInterval: 4500,
+			pauseOnHover: true,
+
+			dynamicArrows: true,
+			dynamicArrowsGraphical: true,
+			hoverArrows: true,
+
+			dynamicTabs: true,
+			dynamicTabsAlign: "center",
+			preloader: true,
+			responsive: true,
+			mobileNavigation: true,
+
+			autoHeight:false,
+		    slideEaseFunction:'animate.css',
+		    slideEaseDuration:1000,
+		    heightEaseDuration:1000,
+		    animateIn:"fadeInDown",
+		    animateOut:"bounceOutUp",
+		    callback: function() {
+				var self = this;
+				$('.slider-6-panel').each(function() {
+			  	$(this).removeClass('animated ' + self.options.animateIn);
+				});
+				}
+			});
+	});
+
+
 
     //////////////////////// WEB ZONE ////////////////////////
     var myEasingWeb = "easeInOutElastic";
@@ -278,25 +278,15 @@ $(document).ready(function(){
         $(this).find(".siteLeft").stop().animate({left:'0%'}, mydurationWeb, myEasingWeb);
         $(this).find(".siteRight").stop().animate({right:'0%'}, mydurationWeb, myEasingWeb);
     });
-    
-    var elementsHover= function () {          
-        $(".project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize").addClass("webHover");
-    }; 
-    
-    var elementsOut = function () {          
-        $(".project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize").removeClass("webHover");
-    };  
-    
-    
-    // JLD
-    $( ".project-jld" ).mouseover(function() {
-        elementsHover();
-        $(".project-jld .fullSize").removeClass("webHover");
-    });
-    $( ".project-jld").mouseout(function() {
-        elementsOut();
-    }); 
-    
+
+    var elementsHover= function () {
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize").addClass("webHover");
+    };
+
+    var elementsOut = function () {
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize").removeClass("webHover");
+    };
+
     // APS
     $( ".project-aps" ).mouseover(function() {
         elementsHover();
@@ -304,8 +294,26 @@ $(document).ready(function(){
     });
     $( ".project-aps").mouseout(function() {
         elementsOut();
-    }); 
-    
+    });
+
+    // JLD
+    $( ".project-jld" ).mouseover(function() {
+        elementsHover();
+        $(".project-jld .fullSize").removeClass("webHover");
+    });
+    $( ".project-jld").mouseout(function() {
+        elementsOut();
+    });
+
+    // FELT
+    $( ".project-felt" ).mouseover(function() {
+        elementsHover();
+        $(".project-felt .fullSize").removeClass("webHover");
+    });
+    $( ".project-felt").mouseout(function() {
+        elementsOut();
+    });
+
     // DOREUSE
     $( ".project-doreuse" ).mouseover(function() {
         elementsHover();
@@ -313,8 +321,8 @@ $(document).ready(function(){
     });
     $( ".project-doreuse").mouseout(function() {
         elementsOut();
-    }); 
-    
+    });
+
     // MATSUOKA
     $( ".project-matsuoka" ).mouseover(function() {
         elementsHover();
@@ -322,8 +330,8 @@ $(document).ready(function(){
     });
     $( ".project-matsuoka").mouseout(function() {
         elementsOut();
-    }); 
-    
+    });
+
     // ACV
     $( ".project-acv" ).mouseover(function() {
         elementsHover();
@@ -331,10 +339,10 @@ $(document).ready(function(){
     });
     $( ".project-acv").mouseout(function() {
         elementsOut();
-    }); 
+    });
 
-    
-    
+
+
     //////////////////////// WEB ZONE OLD ////////////////////////
     $('.grid li').hover(function(){
         $(this).find('img').stop().animate({bottom:'90px'},{queue:false,duration:300});
@@ -348,7 +356,7 @@ $(document).ready(function(){
         .stop().animate({bottom:'0px'},80);
     });
 
-		
+
 	// Formulaires cacher/afficher texte par defaut
 		$(function(){
     	$(".inputValDefaut").bind({

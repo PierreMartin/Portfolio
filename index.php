@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 session_start();
 $messageInfo = '';
@@ -15,7 +15,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
 <!DOCTYPE HTML>
 <html lang="fr">
-<head> 
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- META -->
@@ -29,43 +29,43 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" href="favicon.png" type="image/png">
 
-    <!-- FONT AWESOME --> 
+    <!-- FONT AWESOME -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-    <!-- CSS MAIN --> 
+
+    <!-- CSS MAIN -->
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/animations.css" rel="stylesheet" type="text/css" media="screen">
 
-    <!-- INTRO --> 
+    <!-- INTRO -->
     <link href="intro/styles.css" rel="stylesheet" type="text/css">
-    
-    <!-- Google WebFont --> 
+
+    <!-- Google WebFont -->
     <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:900,400' rel='stylesheet' type='text/css'>
 
     <!-- CSS LIQUIDE SLIDER -->
-    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/liquid-slider.css">
 
     <style type="text/css" media="screen">
         @import url("css/media_queries.css");
     </style>
-    
+
     <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
-    
+
     <!--[if IE]>
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <![endif]-->
-        
+
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    <!-- CSS IE INFERIEUR OU EGALE A IE8 --> 
+
+    <!-- CSS IE INFERIEUR OU EGALE A IE8 -->
     <!--[if lte IE 8]>
         <link href="css/ie.css" rel="stylesheet" type="text/css">
     <![endif]-->
-        
+
 
 </head>
 
@@ -87,19 +87,19 @@ if ( !isset($_SESSION['messageInfo']) ) {
         </div>
 
     <![endif]-->
-        
-    
-    
-    
+
+
+
+
     <!-- SI ANCIEN NAVIGATEUR IE, ALORS ON AFFICHE RIEN DU SITE :-->
     <!--[if (!IE 8) & (!IE 7) & (!IE 6)]><!-->
-    
-    
+
+
     <!-- INTRO -->
     <div class="hideIntro"></div>
-    
+
     <div class="contenerLoad">
-        
+
         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
@@ -140,7 +140,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     l-10.273-4.326l6.969-8.035l11.346-13.081l11.382-13.052l11.432-13.012l11.49-12.964l11.543-12.921l11.605-12.871
                     c3.896-4.269,7.763-8.559,11.697-12.796c3.928-4.243,7.825-8.509,11.798-12.715L580.772,471.213z"/>
                 </clipPath>
-                
+
                 <path class="svgAnim1" clip-path="url(#contourBasPath)" fill="none" stroke="#493442" stroke-width="30" stroke-miterlimit="10" d="M579.8,470.427
                     c-2.813,3.476-5.627,6.951-8.441,10.426c-6.784,8.379-13.568,16.759-20.353,25.139c-8.27,10.214-16.539,20.428-24.808,30.642
                     c-7.269,8.979-14.538,17.957-21.807,26.935c-3.783,4.673-7.566,9.346-11.349,14.019c-0.12,0.147-0.239,0.296-0.359,0.443
@@ -168,7 +168,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     c7.038-2.692,14.075-5.386,21.112-8.079c0.763-0.292,1.525-0.584,2.288-0.876c-2.812-3.478-5.623-6.954-8.435-10.432
                     c-6.779-8.384-13.558-16.768-20.337-25.151c-8.263-10.219-16.525-20.438-24.789-30.657c-7.263-8.982-14.526-17.965-21.789-26.948
                     c-3.78-4.675-7.561-9.35-11.341-14.025c-0.119-0.148-0.239-0.296-0.358-0.444"/>
-                    
+
 
 
                 <!-- CONTOUR HAUT -->
@@ -202,7 +202,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                         l10.144,4.332l-6.837,7.994l-11.309,13.223l-11.346,13.193c-7.588,8.775-15.195,17.536-22.852,26.258l-11.509,13.062
                         l-11.571,13.012c-3.884,4.316-7.741,8.653-11.664,12.939c-3.917,4.29-7.803,8.604-11.767,12.856L1212.065,470.453z"/>
                 </clipPath>
-                
+
                 <path class="svgAnim2" clip-path="url(#contourHautPath)" fill="none" stroke="#DD5754" stroke-width="30" stroke-miterlimit="10" d="M1213.042,471.233
                     c2.778-3.48,5.558-6.96,8.336-10.44c6.709-8.402,13.417-16.804,20.126-25.206c8.197-10.267,16.396-20.534,24.593-30.8
                     c7.246-9.075,14.492-18.149,21.737-27.224c3.853-4.825,7.705-9.65,11.559-14.476c0.149-0.188,0.299-0.375,0.449-0.563
@@ -231,7 +231,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     c8.189,10.27,16.379,20.54,24.569,30.81c7.254,9.097,14.509,18.194,21.763,27.291c3.89,4.877,7.779,9.754,11.668,14.632
                     c0.163,0.205,0.326,0.409,0.489,0.614"/>
 
-           
+
                 <!-- P 1 -->
                 <clipPath id="p1BasPath">
                     <path d="M784.105,469.233c-19.58,62.543-32.88,131.734-32.88,177.818c0,37.429,0.614,59.519,20.862,59.519
@@ -239,28 +239,28 @@ if ( !isset($_SESSION['messageInfo']) ) {
                 </clipPath>
                 <path class="p1BasPath" clip-path="url(#p1BasPath)" fill="none" stroke="#493442" stroke-width="120" stroke-miterlimit="10" d="M828.267,449.233
                     c-8,50-22,98-30,148c-4,30-20,106,2,126"/>
-                    
+
 
                 <!-- P 2 -->
                 <clipPath id="p2BasPath">
                     <path d="M972.93,469.233c-35.979,29.15-88.558,15.09-88.558,36.08c0,24.544,40.497,27.611,65.654,27.611
                         c52.135,0,94.838-26.444,121.597-63.691H972.93z"/>
                 </clipPath>
-                
+
                 <path class="p2BasPath" clip-path="url(#p2BasPath)" fill="none" stroke="#493442" stroke-width="120" stroke-miterlimit="10" d="M1034.458,443.334
                     c-22,62-102.19,73.898-158.19,73.898"/>
-                    
-                    
+
+
                 <!-- P 3 FIRST -->
                 <clipPath id="p1HautPath">
                     <path d="M873.329,325.532c-17.794,0-34.975,22.703-42.951,34.975c-16.854,27.015-33.004,66.345-46.272,108.726
                         h81.011c8.106-38.567,16.189-81.201,16.189-110.567C881.305,342.099,878.851,325.532,873.329,325.532z"/>
                 </clipPath>
                 <path class="p1HautPath" clip-path="url(#p1HautPath)" fill="none" stroke="#DD5754" stroke-width="120" stroke-miterlimit="10" d="M810.267,509.233
-		            c14-26,14-58,28-84c16-32,28-98,52-122"/> 
-                   
-                    
-                    
+		            c14-26,14-58,28-84c16-32,28-98,52-122"/>
+
+
+
                 <!-- P 4 -->
                 <clipPath id="p2HautPath">
                     <path d="M746.93,337.19c38.042,0,63.199-42.951,151.556-42.951c69.948,0,107.377,30.066,107.377,83.448
@@ -270,21 +270,21 @@ if ( !isset($_SESSION['messageInfo']) ) {
                 </clipPath>
                 <path class="p2HautPath" clip-path="url(#p2HautPath)" fill="none" stroke="#DD5754" stroke-width="120" stroke-miterlimit="10" d="M1010.267,493.233
                     c14-42,62-96,48-146c-12-44-72-70-112-74c-36-4-94-8-126,6c-44,18-80,62-112,96"/>
-                
-                
-                
 
-            
-            
-            
-          
-       
+
+
+
+
+
+
+
+
         </svg>
 
     </div>
     <!-- FIN INTRO -->
 
- 
+
 	<nav id="horizontal" class="transitionmenu">
         <div class="containerBar">
             <div class="bar">
@@ -308,8 +308,8 @@ if ( !isset($_SESSION['messageInfo']) ) {
                 <span style=""></span>
             </div>
         </div>
-        
-     
+
+
         <ul>
             <li class="link-hover">
                 <a href="#ancre_websites" id="websites" title="Websites et Mailings">Websites</a>
@@ -328,13 +328,13 @@ if ( !isset($_SESSION['messageInfo']) ) {
             </li>
         </ul>
     </nav>
-    
-    
+
+
  	<div id="fondheader">
 
     	<div id="video_container">
-            <video id="video_background" loop> 
-                <source src="http://pierredesigner.com/videos/video2.webm" type="video/webm" />         
+            <video id="video_background" loop>
+                <source src="http://pierredesigner.com/videos/video2.webm" type="video/webm" />
                 <source src="http://pierredesigner.com/videos/video2.mp4" type="video/mp4" />
                 <source src="http://pierredesigner.com/videos/video2.ogv" type="video/ogg" />
             </video>
@@ -349,7 +349,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
     	<div id="conteneur">
                 <header>
-              
+
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                         	<a href="CV-Pierre.pdf" target="_blank" title="CV à télécharger !">
@@ -357,7 +357,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                             	 	<img src="img/logoFull.png" title="CV à télécharger !" alt="CV à télécharger !">
                             	</div>
                             </a>
-    
+
                             <div class="back"> <!-- back content -->
                               	<a href="CV-Pierre.pdf" target="_blank"></a>
                           </div>
@@ -365,7 +365,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     </div>
 
                 </header>
-            
+
                 <nav id="vertical" class="cachemobile">
                     <ul>
                         <li><a class="btn btn_web" href="#ancre_websites" id="websites2" title="Websites et Mailings">Websites</a></li>
@@ -375,103 +375,127 @@ if ( !isset($_SESSION['messageInfo']) ) {
                         <li><a class="btn btn_con" href="#ancre_contact" id="contact2" title="Contact">Contact</a></li>
                     </ul>
                 </nav>
-                
-                
+
+
                 <article id="articletop">
                     <br>
                     <h1>Pierre Martin</h1>
-                    <p class="big_texte text-shadow_vert">FRONT-END DEVELOPER / MOTION DESIGNER / WEB DESIGNER</p> 
+                    <p class="big_texte text-shadow_vert">FRONT-END DEVELOPER / MOTION DESIGNER / WEB DESIGNER</p>
                     <br>
-                    <span id="sroll">scroll - faire défiler</span> 
+                    <span id="sroll">scroll - faire défiler</span>
                     <br>
 
                     <img id="animate2" src="img/scroll.png" alt="faire défiller">
-                </article>        
-                        
-                        
-                        
+                </article>
+
+
+
 <!--
                 <aside class="cachemobile">
                     <div id="asidetest"></div>
                 </aside>
 -->
-                
+
            </div>
-       
-        
-        
-    </div> 
+
+
+
+    </div>
     <div id="fondheaderbottom"></div>
-    
-    
+
+
 	<div class="fond2 percentDiv" id="ancre_websites">
         <h1>Websites</h1>
-        
-        <!-- SITE JLD -->
-        <div class="siteContainer project-jld">
-            <div class="siteText">
-                <h2>JLD Consulting</h2>
-                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site vitrine pour la société JLD Consulting. Site actuellement en construction</p>
-                <span><strong>Environnement de travail :</strong><br>Au sein de la société Société APS</span>
-            </div>
-            <div class="siteLeft"></div>
-            <div class="siteRight"></div>
-            <a href="http://pierredesigner.com/sites/jld/" target="_blank"><div class="fullSize"></div></a>
-        </div>
-        
+
         <!-- SITE APS -->
         <div class="siteContainer project-aps">
             <div class="siteText">
                 <h2>APS-Export</h2>
-                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site vitrine pour la société APS-Export. Site actuellement en construction</p>
-                <span><strong>Environnement de travail :</strong><br>Au sein de la société Société APS</span>
+                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site vitrine pour la société APS-Export.</p>
+                <span><strong>Environnement de travail : </strong>Au sein de la société Société APS</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>HTML5, CSS3, php, Jquery, SVG, Velocity JS</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
             <a href="http://pierredesigner.com/sites/aps/" target="_blank"><div class="fullSize"></div></a>
         </div>
-           
+
+        <!-- SITE JLD -->
+        <div class="siteContainer project-jld">
+            <div class="siteText">
+                <h2>JLD Consulting</h2>
+                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site vitrine pour la société JLD Consulting. Site actuellement en construction</p>
+                <span><strong>Environnement de travail : </strong>Au sein de la société Société APS</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>HTML5, CSS3, php, Jquery, SVG, Jquery, Velocity JS</span>
+            </div>
+            <div class="siteLeft"></div>
+            <div class="siteRight"></div>
+            <a href="http://pierredesigner.com/sites/jld/" target="_blank"><div class="fullSize"></div></a>
+        </div>
+
+        <!-- SITE FELT -->
+        <div class="siteContainer project-felt">
+            <div class="siteText">
+                <h2>Felt Energy</h2>
+                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site vitrine pour la société Felt Energy. Site actuellement en construction</p>
+                <span><strong>Environnement de travail : </strong>Au sein de la société Société APS</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>HTML5, CSS3, Bootstrap, Sass, Compass, SVG, Jquery, Velocity JS</span>
+            </div>
+            <div class="siteLeft"></div>
+            <div class="siteRight"></div>
+            <a href="http://pierredesigner.com/sites/felt/" target="_blank"><div class="fullSize"></div></a>
+        </div>
+
         <!-- SITE DOREUSE BLOIS -->
         <div class="siteContainer project-doreuse">
             <div class="siteText">
                 <h2>La Doreuse de Blois</h2>
                 <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site marchand pour une boutique d'objets anciens et de restauration de cadres/dorures.</p>
-                <span><strong>Environnement de travail :</strong><br>En freelance</span>
+                <span><strong>Environnement de travail : </strong>En freelance</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>HTML5, CSS3, Magento, Jquery</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
             <a href="http://www.doreuse-de-blois.com/" target="_blank"><div class="fullSize"></div></a>
         </div>
-           
+
         <!-- SITE DOREUSE ATELIER MATSUOKA -->
         <div class="siteContainer project-matsuoka">
             <div class="siteText">
                 <h2>Atelier Matsuoka - Paris</h2>
                 <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un projet web sur mesure pour l'ouverture d'un atelier de restauration de peintures, de meubles anciens et d'oeuvres d'art situé à Paris.</p>
-                <span><strong>Environnement de travail :</strong><br>En freelance</span>
+                <span><strong>Environnement de travail : </strong>En freelance</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>HTML5, CSS3, php, Jquery</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
             <a href="http://www.ateliermatsuoka.com/" target="_blank"><div class="fullSize"></div></a>
         </div>
-           
+
         <!-- SITE ACV -->
         <div class="siteContainer project-acv">
             <div class="siteText">
                 <h2>ACV</h2>
                 <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un projet web sur mesure pour une association de collection de disques. Site réalisé sous WordPress.</p>
-                <span><strong>Environnement de travail :</strong><br>A l'école - Projet de fin d'étude pour une association</span>
+                <span><strong>Environnement de travail : </strong>A l'école - Projet de fin d'étude pour une association</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>HTML5, CSS3, php, WordPress, Jquery, Velocity JS</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
             <a href="http://acv-calais.fr/" target="_blank"><div class="fullSize"></div></a>
         </div>
-        
-        
-        
-        
+
+
+
+
         <article class="articlebody">
-            
+
   			<ul class="grid cs-style-2"> <!-- /Galerie jQuery -->
                     <h2 style="margin-top: 30px;">Mailings :</h2>
            			<li class="site1">
@@ -485,8 +509,8 @@ if ( !isset($_SESSION['messageInfo']) ) {
 					<p class="texte_sites" style="margin: 0;">Mailing Tout le Monde Veux Prendre Sa Place - Silicon carne</p>
 					<p class="texte_sites_sm">#Digital #Mailing</p>
 					<hr>
-						
-                    
+
+
                     <li class="site1">
 						<img src="img/mailing4_big.jpg" alt="Mailing QPUC">
 						<div class="figcaption">
@@ -498,23 +522,23 @@ if ( !isset($_SESSION['messageInfo']) ) {
 					<p class="texte_sites" style="margin: 0;">Mailing Question Pour Un Champion - Silicon Carne</p>
 					<p class="texte_sites_sm">#Digital #Mailing</p>
 					<hr>
-              
+
             </ul><!-- /Fin galerie jQuery -->
 
-			
+
 			<section class="conteneur_sections1">
 				<section class="boite">
 					<img src="img/web.png" alt="website">
 					<h3 class="texte_sites_sm">WEBSITE</h3>
 					<p class="texte_sites_sm">Création de sites sur mesure, sites e-commerces, Web design, ergonomie, e-mailings, respect des standards W3C, hébergement</p>
 				</section>
-				
+
 				<section class="boite">
 					<img src="img/dev.png" alt="developpement">
 					<h3 class="texte_sites_sm">DEVELOPPEMENT</h3>
 					<p class="texte_sites_sm">Intégration, HTML5, JavaScript, JQuery, PhP, base de données, CMS (WordPress), programmation applicative, conversion Flash en HTML5</p>
 				</section>
-				
+
 				<section class="boite">
 					<img src="img/responsive.png" alt="responsive design">
 					<h3 class="texte_sites_sm">RESPONSIVE DESIGN</h3>
@@ -522,133 +546,133 @@ if ( !isset($_SESSION['messageInfo']) ) {
 				</section>
 
             </section>
-			
+
         </article>
-    </div> 
-      
+    </div>
+
     <div id="fond2bottom"></div>
-    
-    
-	<div class="fond3 percentDiv" id="ancre_graph">	
+
+
+	<div class="fond3 percentDiv" id="ancre_graph">
     	<article class="articlebody">
             <h1>Graphismes</h1>
             <h2 class="textestyle2">Réalisations personnelles :</h2>
-            
+
             <div class="liquid-slider" id="slider-id"> <!-- slider-id -->
-            
+
                  <div>
                       <h2 class="title">1</h2>
                       <p>Réalisation de mon dépliant - recto (format A4)</p>
                       <img src="img_slide/pierre_flyer1.jpg" alt="Réalisation de mon dépliant - recto (format A4)">
                  </div>
-				 
+
 				 <div>
                       <h2 class="title">2</h2>
                       <p>Réalisation de mon dépliant - verso (format A4)</p>
                       <img src="img_slide/pierre_flyer2.jpg" alt="Réalisation de mon dépliant - verso (format A4)">
                  </div>
-				 
+
 				 <div>
                       <h2 class="title">3</h2>
                       <p>Réalisation d'un affiche pour la société Ad4screen</p>
                       <img src="img_slide/ad4screen.jpg" alt="Réalisation d'un affiche pour la société Ad4screen">
                  </div>
-				 
+
 				 <div>
                       <h2 class="title">4</h2>
                       <p>Réalisation d'une maquette d'une newsletter pour la société Lydia</p>
                       <img src="img_slide/lydia.jpg" alt="Réalisation d'une maquette d'une newsletter pour la société Lydia">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">5</h2>
                       <p>Perroquet</p>
                       <img src="img_slide/PerroquetV3.jpg" alt="Perroquet">
                  </div>
-   
+
                  <div>
                       <h2 class="title">6</h2>
                       <p>3D effet</p>
                       <img src="img_slide/3dfx2.jpg" alt="3D effet 1">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">7</h2>
                       <p>3D effet</p>
                       <img src="img_slide/3dfx3.jpg" alt="3D effet 1">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">8</h2>
                       <p>Réalisation affiche et guitare en vectoriel</p>
                       <img src="img_slide/affiche_Guitare.jpg" alt="affiche guitare">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">9</h2>
                       <p>Réalisation fiole en vectoriel</p>
                       <img src="img_slide/fiole.jpg" alt="fiole">
                  </div>
-                 
-				 
-        
+
+
+
             </div> <!-- slider-id -->
-            
-            
-          
-            
-            
+
+
+
+
+
             <hr>
             <h2 class="textestyle2">Réalisations pour la société "Silicon Carne"</h2>
-            
+
             <div class="liquid-slider" id="slider-id3"> <!-- slider-id3 -->
-            
+
                  <div>
                       <h2 class="title">1</h2>
                       <p>"Tout le monde veux prendre sa place" : Réalisation visuel pour la page fan Facebook</p>
                       <img src="img_slide/sc_theme_humoristes.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">2</h2>
                       <p>"Tout le monde veux prendre sa place" : Réalisation visuel pour la page fan Facebook</p>
                       <img src="img_slide/sc_theme_grec.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">3</h2>
                       <p>"SLAM" : Réalisation d'une newsletter</p>
                       <img src="img_slide/sc_slam_galette.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">4</h2>
                       <p>"Tout le monde veux prendre sa place" : Réalisation d'une newsletter</p>
                       <img src="img_slide/sc_tlm_spa.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">5</h2>
                       <p>"Tout le monde veux prendre sa place" : Réalisation d'une roue</p>
                       <img src="img_slide/sc_roue.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">6</h2>
                       <p>"Tout le monde veux prendre sa place" : Réalisation d'un visuel pour la page fan Facebook</p>
                       <img src="img_slide/sc_jo1.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
-                 
+
                  <div>
                       <h2 class="title">7</h2>
                       <p>"Tout le monde veux prendre sa place" : Réalisation d'un PopUp pour une roue</p>
                       <img src="img_slide/sc_roue_popup.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
-                 
+
             </div> <!-- slider-id3 -->
-            
-    
-    
+
+
+
 <!--
                 <section class="conteneur_sections1">
                     <section class="boite">
@@ -656,13 +680,13 @@ if ( !isset($_SESSION['messageInfo']) ) {
                         <h3>PRINT</h3>
                         <p>flyers, affiches, brochures, cartes de visites...</p>
                     </section>
-                    
+
                     <section class="boite">
                         <img src="img/photo.png" alt="photos">
                         <h3>PHOTOGRAPHIE</h3>
                         <p>Montages photos, mattes-paintings, retouche photos...</p>
                     </section>
-                    
+
                     <section class="boite">
                         <img src="img/picto.png" alt="pictogrammes">
                         <h3>PICTOGRAMME</h3>
@@ -670,86 +694,86 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     </section>
                 </section>
 -->
-                
+
         </article> <!-- articlebody -->
     </div>  <!-- fond3 -->
-    
+
 
     <div id="fond3bottom"></div>
-    
-    
+
+
     <!-- ANIMATION FLASH -->
-    <div class="fond_anim percentDiv" id="ancre_anim">	
+    <div class="fond_anim percentDiv" id="ancre_anim">
     	<article class="articlebody">
             <h1>Animations</h1>
             <h2 class="textestyle2">Mes réalisations sur Flash</h2>
-            
+
             <div class="flash_conteneur">
-            
+
             	<h3 class="textestyle2">Réalisation Silicon Carne </h3>
                 <div id="flash_noel">
                     <a href="http://www.adobe.com/go/getflash">
                         <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir Adobe Flash Player" />
                     </a>
                     <p>Cette page requiert Flash Player version 9.0.124 ou ultérieure.</p>
-                </div> 
+                </div>
                 <hr><br>
-                
+
                 <h3 class="textestyle2">Réalisation Silicon Carne pour le jeu "Tout le monde veux prendre sa place"</h3>
                 <div id="flash_tlm2">
                     <a href="http://www.adobe.com/go/getflash">
                         <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir Adobe Flash Player" />
                     </a>
                     <p>Cette page requiert Flash Player version 10.3.0 ou ultérieure.</p>
-                </div> 
-                
-            </div> 
-            
+                </div>
+
+            </div>
+
         </article> <!-- articlebody -->
     </div>
-    
-         
+
+
     <div id="fond_anim_bottom"></div>
-   
-       
+
+
     <div class="fond4 percentDiv" id="ancre_bio">
         <h1>A propos</h1>
-    	<article class="articlebody"> 
+    	<article class="articlebody">
    	    	<section style="text-align: center;">
                 <p class="textestyle1">Je m'appelle <span class="textestyle4">Pierre MARTIN</span>, j'ai 27 ans.
 				<br>je suis <span class="textestyle4">designer créatif</span> et <span class="textestyle4">développeur intéractif front-end</span>.
 				<br>je suis récemment titulaire d'un titre professionnel de niveau III en art graphique/Webdesign.
 				<br><br>Actuellement en préparation d'un titre professionnel de niveau II « Développeur Multimédia » à l’Ecole Multimédia, je suis à la recherche d'une entreprise en alternance à partir du mois d'aout 2015.</p>
-    
+
                 <hr><br>
-                
+
                 <a class="btn btn_graph" href="formation.pdf" target="_blank" id="websites2" title="Contenu de ma fomation">voir le contenu de ma formation !</a>
             </section>
-           	
+
 		</article>
-	</div> 
+	</div>
 
 	<div id="fond4bottom"></div>
-    
+
 
 	<div class="fond5" id="ancre_contact">
     	<div class="percentDivLast percentDiv"></div>
     	<h1>Contact</h1>
         <section>
-            <p class="textestyle1">Vous avez besoin d'un renseignement, vous avez envie de me proposer votre projet ou de me rencontrer ? 
+            <p class="textestyle1">Vous avez besoin d'un renseignement, vous avez envie de me proposer votre projet ou de me rencontrer ?
             N'hésitez pas à me contacter via le formulaire ci-dessous.</p>
         </section>
-        
+
         <section id="mapgoogle" >
-        
+
 			<div id="map-canvas"></div>
-			
-            <article class="articlebody articlebodymap"> 
+
+            <article class="articlebody articlebodymap">
                 <p class="conatainerMessageSend"><?php echo $messageInfo; ?></p>
                 <br>
-                
+
                 <form action="form.php" method="post" enctype="application/x-www-form-urlencoded" name="formulaire_mailing" class="formular" id="formID">
-            
+
                     <fieldset>
                         <input type="hidden" name="hidden" id="securite">
 
@@ -759,87 +783,87 @@ if ( !isset($_SESSION['messageInfo']) ) {
                         <br>
                         <input type="email" name="email" id="mail" size="30" maxlength="50" placeholder="Adresse mail" autocomplete="off" required>
                         <br>
-                        
-                        <textarea name="message" cols="20" rows="6" maxlength="800" placeholder="Votre message" autocomplete="off" required></textarea> 
+
+                        <textarea name="message" cols="20" rows="6" maxlength="800" placeholder="Votre message" autocomplete="off" required></textarea>
                     </fieldset>
 
                     <fieldset class="center">
                         <input name="envoyer" type="submit" class="bouton" title="Envoyer" value="ENVOYER">
                     </fieldset>
                 </form>
-    
-    
+
+
             </article>
-        
-        </section> 
-        
-	</div>    
+
+        </section>
+
+	</div>
 
 	<div id="fond5bottom"></div>
-    
-    
+
+
     <div id="fondfooter">
 		<footer class="textestyle3">
           		<h2>MERCI DE VOTRE VISITE !</h2>
           		<div class="linkFooter" style="margin-bottom: 50px;">
-          		    <a href="#fondheader">Haut de page</a> 
-          		    <span>|</span> 
-          		    <a href="#ancre_websites">Websites</a> 
-          		    <span>|</span> 
-          		    <a href="#ancre_graph">Graphismes</a> 
-          		    <span>|</span> 
+          		    <a href="#fondheader">Haut de page</a>
+          		    <span>|</span>
+          		    <a href="#ancre_websites">Websites</a>
+          		    <span>|</span>
+          		    <a href="#ancre_graph">Graphismes</a>
+          		    <span>|</span>
           		    <a href="#ancre_bio">A propos</a>
           		    <span>|</span>
           		    <a href="#ancre_contact">Contact</a>
           		</div>
-          		
-            	
+
+
                 <div class="containerSocial">
                     <a class="linkedin" href="https://fr.linkedin.com/in/pierredesigner" target="_blank" title="linkedin">
                         <i class="fa fa-linkedin-square"></i>
                     </a>
-  
+
                     <a class="twitter" href="https://twitter.com/Pierredevparis?lang=fr" target="_blank" title="Twitter">
                         <i class="fa fa-twitter-square"></i>
                     </a>
-                    
+
                     <a class="facebook" href="https://www.facebook.com/pierre.mrt.5?ref=tn_tnmn/" target="_blank" title="Facebook">
                         <i class="fa fa-facebook-official"></i>
                     </a>
-                       
+
                     <a class="github" href="https://github.com/PierreMartin" target="_blank" title="github">
                         <i class="fa fa-github-square"></i>
                     </a>
                 </div>
-                
-                
-                
-                
+
+
+
+
 
                 <p class="texte_copyright">COPYRIGHT © 2015 PIERRE MARTIN. ALL RIGHTS RESERVED.</p>
         </footer>
-        
+
         <div id="hautdepage">
             	<a href="#fondheader" title="haut de page">
             	    <i class="fa fa-arrow-circle-up"></i>
                 </a>
         </div>
-        
+
 	</div>
 
     <!--<![endif]--> <!-- FIN DES ANCIENS NAVIGATEUR IE -->
-    
+
 <!-- ====================== SCRIPTS ====================== -->
-   
+
     <!--<script type="text/javascript" src="jquery-1.9.1.min.js"></script>-->
     <script src="bower_components/jquery/jquery.min.js" type="text/javascript"></script>
 <!--    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>-->
     <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
     <script src="js/velocity.js" type="text/javascript"></script>
 
-    
+
     <!-- SCROLLING -->
-    <script src="js/smooth-scroll.js"></script> 
+    <script src="js/smooth-scroll.js"></script>
 
     <!-- LIQUIDE SLIDER -->
     <script src="./js/jquery.touchSwipe.min.js"></script>
@@ -873,7 +897,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         attributesNoel.id          = "pere_noel";
         attributesNoel.name        = "pere_noel";
         attributesNoel.align       = "middle";
-        swfobject.createCSS("body", "height:100%;"); 
+        swfobject.createCSS("body", "height:100%;");
         swfobject.embedSWF("pere_noel.swf", "flash_noel", "414", "600", "9.0.0");
 
         var attributesPub          = {};
@@ -909,12 +933,12 @@ if ( !isset($_SESSION['messageInfo']) ) {
         _gaq.push(['_trackPageview']);
 
         (function() {
-            var ga = document.createElement('script'); 
-            ga.type = 'text/javascript'; 
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
             ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 
-            var s = document.getElementsByTagName('script')[0]; 
+            var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ga, s);
         })();
     </script>
@@ -987,7 +1011,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
             // Création du marker
             var myMarker = new google.maps.Marker({
-                position: myLatlng, 
+                position: myLatlng,
                 map: myMap,
                 icon: myMarkerImage, // Appel de l'icon
                 title: "Pierre Webdesigner"
