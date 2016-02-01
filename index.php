@@ -450,7 +450,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         </div>
 
         <!-- SITE DOREUSE BLOIS -->
-        <div class="siteContainer project-doreuse">
+        <!--<div class="siteContainer project-doreuse">
             <div class="siteText">
                 <h2>La Doreuse de Blois</h2>
                 <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site marchand pour une boutique d'objets anciens et de restauration de cadres/dorures.</p>
@@ -461,9 +461,9 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
             <a href="http://www.doreuse-de-blois.com/" target="_blank"><div class="fullSize"></div></a>
-        </div>
+        </div>-->
 
-        <!-- SITE DOREUSE ATELIER MATSUOKA -->
+        <!-- SITE ATELIER MATSUOKA -->
         <div class="siteContainer project-matsuoka">
             <div class="siteText">
                 <h2>Atelier Matsuoka - Paris</h2>
