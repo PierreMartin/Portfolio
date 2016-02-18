@@ -407,6 +407,34 @@ if ( !isset($_SESSION['messageInfo']) ) {
 	<div class="fond2 percentDiv" id="ancre_websites">
         <h1>Websites</h1>
 
+        <!-- PROJET E-Star Wars -->
+        <!--<div class="siteContainer project-starswar">
+            <div class="siteText">
+                <h2>E-Star Wars</h2>
+                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site e-commerce</p>
+                <span><strong>Environnement de travail : </strong>A l'école - Projet de fin d'année</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>Laravel, NodeJs, HTML5/CSS3/JS, PHP, Jquery</span>
+            </div>
+            <div class="siteLeft"></div>
+            <div class="siteRight"></div>
+            <a href="http://pierredesigner.com/sites/starswars/" target="_blank"><div class="fullSize"></div></a>
+        </div>-->
+
+        <!-- PROJET GMAP -->
+        <div class="siteContainer project-gmap">
+            <div class="siteText">
+                <h2>Google Map + Angular</h2>
+                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'une carte interactive montrant des différentes courses</p>
+                <span><strong>Environnement de travail : </strong>Freelance</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>Angular, NodeJs, api gmap, HTML5/CSS3/JS, Jquery</span>
+            </div>
+            <div class="siteLeft"></div>
+            <div class="siteRight"></div>
+            <a href="http://pierredesigner.com/sites/gmap/#/" target="_blank"><div class="fullSize"></div></a>
+        </div>
+
         <!-- SITE APS -->
         <div class="siteContainer project-aps">
             <div class="siteText">

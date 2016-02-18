@@ -356,6 +356,19 @@ footer {
 .siteContainer .siteText span  { font-size: 0.8em; text-shadow: none; }
 
 /* WEB : CHARGEMENT IMAGES */ /* 1200 X 270 */
+.project-starswar            { background-color: #fdf6e7; }
+.project-starswar .siteLeft  { background: url(../projets_web/aa-g.jpg) right no-repeat; }
+.project-starswar .siteRight { background: url(../projets_web/aa-d.jpg) left no-repeat; }
+.project-starswar .siteText  { background-color: #1ff; margin: 0 auto; padding-top: 10px; }
+.project-starswar .siteText h2, .project-starswar .siteText p, .project-starswar .siteText span { color: #fdf6e7 !important; }
+
+.project-gmap            { background-color: #6d97a1; }
+.project-gmap .siteLeft  { background: url(../projets_web/gmap-g.jpg) right no-repeat; }
+.project-gmap .siteRight { background: url(../projets_web/gmap-d.jpg) left no-repeat; }
+.project-gmap .siteText  { background-color: #191E29; margin: 0 auto; padding-top: 10px; }
+.project-gmap .siteText h2, .project-gmap .siteText p, .project-gmap .siteText span { color: #f07269 !important; }
+
+
 .project-aps            { background: url(../projets_web/aps-bg.jpg); }
 .project-aps .siteLeft  { background: url(../projets_web/aps-g.jpg) right no-repeat; }
 .project-aps .siteRight { background: url(../projets_web/aps-d.jpg) left no-repeat; }

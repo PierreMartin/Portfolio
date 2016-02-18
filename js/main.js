@@ -280,12 +280,31 @@ $(document).ready(function(){
     });
 
     var elementsHover= function () {
-        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize").addClass("webHover");
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-starswar .fullSize, .project-gmap .fullSize").addClass("webHover");
     };
 
     var elementsOut = function () {
-        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize").removeClass("webHover");
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-starswar .fullSize, .project-gmap .fullSize").removeClass("webHover");
     };
+
+
+    // starswar
+    $( ".project-starswar" ).mouseover(function() {
+        elementsHover();
+        $(".project-starswar .fullSize").removeClass("webHover");
+    });
+    $( ".project-starswar").mouseout(function() {
+        elementsOut();
+    });
+
+    // gmap
+    $( ".project-gmap" ).mouseover(function() {
+        elementsHover();
+        $(".project-gmap .fullSize").removeClass("webHover");
+    });
+    $( ".project-gmap").mouseout(function() {
+        elementsOut();
+    });
 
     // APS
     $( ".project-aps" ).mouseover(function() {
