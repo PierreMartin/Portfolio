@@ -351,16 +351,17 @@ footer {
     margin: 10px auto 0 auto;
 /*    background-color: #2c3f52;*/
 }
+
 .siteContainer .siteText h2    { padding-top: 20px; }
 .siteContainer .siteText p     { font-size: 1em;   text-shadow: none; }
 .siteContainer .siteText span  { font-size: 0.8em; text-shadow: none; }
 
 /* WEB : CHARGEMENT IMAGES */ /* 1200 X 270 */
-.project-starswar            { background-color: #fdf6e7; }
-.project-starswar .siteLeft  { background: url(../projets_web/aa-g.jpg) right no-repeat; }
-.project-starswar .siteRight { background: url(../projets_web/aa-d.jpg) left no-repeat; }
-.project-starswar .siteText  { background-color: #1ff; margin: 0 auto; padding-top: 10px; }
-.project-starswar .siteText h2, .project-starswar .siteText p, .project-starswar .siteText span { color: #fdf6e7 !important; }
+.project-pokemon            { background-color: #222222; }
+.project-pokemon .siteLeft  { background: url(../projets_web/pokemon-g.jpg) right no-repeat; }
+.project-pokemon .siteRight { background: url(../projets_web/pokemon-d.jpg) left no-repeat; }
+.project-pokemon .siteText  { background-color: #493442; margin: 0 auto; padding-top: 10px; }
+.project-pokemon .siteText h2, .project-pokemon .siteText p, .project-pokemon .siteText span { color: #E4A849 !important; }
 
 .project-gmap            { background-color: #6d97a1; }
 .project-gmap .siteLeft  { background: url(../projets_web/gmap-g.jpg) right no-repeat; }

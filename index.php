@@ -34,6 +34,9 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
     <!-- INTRO -->
     <link href="intro/styles.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
+    <script src="js/velocity.js" type="text/javascript"></script>
 
     <!-- Google WebFont -->
     <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
@@ -265,13 +268,10 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
     </div>
 
-    <script src="bower_components/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
-    <script src="js/velocity.js" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
             // EN MODE DEVELOPPEMENT; ON DESACTIVE L'INTRO :
-            // $(".hideIntro").remove();
+            //$(".hideIntro").remove();
 
             $('.contenerLoad').fadeIn(1000);
 
@@ -438,18 +438,18 @@ if ( !isset($_SESSION['messageInfo']) ) {
 	<div class="fond2 percentDiv" id="ancre_websites">
         <h1>Websites</h1>
 
-        <!-- PROJET E-Star Wars -->
-        <div class="siteContainer project-starswar">
+        <!-- PROJET Pokemon -->
+        <div class="siteContainer project-pokemon">
             <div class="siteText">
-                <h2>E-Star Wars</h2>
-                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site e-commerce</p>
-                <span><strong>Environnement de travail : </strong>A l'école - Projet de fin d'année</span>
+                <h2>Pokemon Stars Rating</h2>
+                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'une application web dynamique permettant de noter des Pokemons.</p>
+                <span><strong>Environnement de travail : </strong>Freelance</span>
                 <br>
-                <span><strong>Technologies utilisées : </strong>Laravel, NodeJs, HTML5/CSS3/JS, PHP, Jquery</span>
+                <span><strong>Technologies utilisées : </strong>Node.js, MongoDB, React et Flux (pour l'architecture + le rendu coté serveur)</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
-            <a href="http://pierredesigner.com/sites/starswars/" target="_blank"><div class="fullSize"></div></a>
+            <a href="http://51.254.120.16:3000" target="_blank"><div class="fullSize"></div></a>
         </div>
 
         <!-- PROJET GMAP -->
@@ -459,7 +459,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                 <p><strong>A propos du projet :</strong><br> Conception et réalisation d'une carte interactive montrant des différentes courses</p>
                 <span><strong>Environnement de travail : </strong>Freelance</span>
                 <br>
-                <span><strong>Technologies utilisées : </strong>Angular, NodeJs, api gmap, HTML5/CSS3/JS, Jquery</span>
+                <span><strong>Technologies utilisées : </strong>Angular, Node.js, api gmap, Jquery</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
@@ -593,7 +593,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 				<section class="boite">
 					<img src="img/dev.png" alt="developpement">
 					<h3 class="texte_sites_sm">DEVELOPPEMENT</h3>
-					<p class="texte_sites_sm">Intégration, HTML5, JavaScript, JQuery, PhP, base de données, CMS (WordPress), programmation applicative, conversion Flash en HTML5</p>
+					<p class="texte_sites_sm">Intégration, HTML5, JavaScript, JQuery, PHP, base de données, CMS (WordPress), programmation applicative</p>
 				</section>
 
 				<section class="boite">

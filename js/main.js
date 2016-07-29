@@ -183,6 +183,7 @@ $(document).ready(function(){
     //////////////////////// WEB ZONE ////////////////////////
     var myEasingWeb = "easeInOutElastic";
     var mydurationWeb = 800;
+
     $(".siteContainer").mouseover(function(){
         $(this).find(".siteLeft").stop().animate({left:'-30%'}, 500, "easeInOutQuart");
         $(this).find(".siteRight").stop().animate({right:'-30%'}, 500, "easeInOutQuart");
@@ -194,20 +195,20 @@ $(document).ready(function(){
     });
 
     var elementsHover= function () {
-        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-starswar .fullSize, .project-gmap .fullSize").addClass("webHover");
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-pokemon .fullSize, .project-gmap .fullSize").addClass("webHover");
     };
 
     var elementsOut = function () {
-        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-starswar .fullSize, .project-gmap .fullSize").removeClass("webHover");
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-pokemon .fullSize, .project-gmap .fullSize").removeClass("webHover");
     };
 
 
-    // starswar
-    $( ".project-starswar" ).mouseover(function() {
+    // pokemon
+    $( ".project-pokemon" ).mouseover(function() {
         elementsHover();
-        $(".project-starswar .fullSize").removeClass("webHover");
+        $(".project-pokemon .fullSize").removeClass("webHover");
     });
-    $( ".project-starswar").mouseout(function() {
+    $( ".project-pokemon").mouseout(function() {
         elementsOut();
     });
 

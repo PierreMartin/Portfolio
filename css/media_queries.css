@@ -152,8 +152,9 @@
     .hidden   { display: none !important; }
     #pub1-CS6 { display: none !important; }
 
-
 }
+
+
 /* --------------- 960px ET PLUS  -------------------*/
 @media screen and (min-width: 960px) { 
     .bordure_bottom { border-bottom: none;}
@@ -164,6 +165,10 @@
 }
 
 
+/* --------------- 1800px ET PLUS  -------------------*/
+@media screen and (min-width: 1800px) {
+    .siteText {  width: 40%;  }
+}
 
 
 /* -------- MENU HORIZONTAL  --------- */
@@ -176,11 +181,13 @@
 
 /* -------- WEB ZONE  --------- */
 @media screen and (max-width: 910px) { 
-    .siteContainer .siteText       { margin-top: 35px; }
+    .siteContainer .siteText       { padding-top: 35px; }
     .siteContainer .siteText h2    { font-size: 1em; }
     .siteContainer .siteText p     { font-size: 0.8em; }
     .siteContainer .siteText span  { font-size: 0.6em; }
 }
+
+
 /* SCALE POUR DIMINER LES DIMENSIONS DES IMAGES */
 @media screen and (max-width: 700px) { 
     .siteContainer {  }
@@ -192,8 +199,4 @@
     
     .siteContainer .siteText       { margin-top: 22px; }
 }
-
-
-
-
 
