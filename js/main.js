@@ -1,86 +1,5 @@
-// affiche le logo d'intro au charement de la page (opacity :0 en css) :
-$('.contenerLoad').fadeIn(1000);
-
-// EN MODE DEVELOPPEMENT; ON DESACTIVE L'INTRO :
-// $(".hideIntro").remove();
-
-
-// VELOCITY
+// Animation navBar Velocity :
 $(document).ready(function() {
-         $.Velocity
-            .RegisterEffect("fadeOutSvg", {
-                defaultDuration: 200,
-                calls: [
-                    [ { opacity: [0, 1] } ],
-                ]
-            })
-
-            .RegisterEffect("animationLogoHaut", {
-                defaultDuration: 1500,
-                calls: [
-                    [ { translateY: -1000               }, 0 ],
-                    [ { opacity   : [1, 0]              }, 0 ],
-                    [ { translateY: 0                   }, 0.150 ],
-                    [ { translateY: -15, scaleY: 0.9    }, 0.100 ],
-                    [ { translateY: 0,   scaleY: 1      }, 0.100 ],
-                ]
-            })
-             .RegisterEffect("animationLogoBas", {
-                defaultDuration: 1500,
-                calls: [
-                    [ { translateY: 1000                }, 0 ],
-                    [ { opacity   : [1, 0]              }, 0 ],
-                    [ { translateY: 0                   }, 0.150 ],
-                    [ { translateY: 15,  scaleY: 0.9    }, 0.100 ],
-                    [ { translateY: 0,   scaleY: 1      }, 0.100 ],
-                ]
-            })
-
-//            .RegisterEffect("animationLogoHautEnd", {
-//                defaultDuration: 800,
-//                calls: [
-//                    [ { translateY: -1000               } ],
-//                    [ { opacity   : [0, 1]              } ],
-//                ]
-//            })
-//            .RegisterEffect("animationLogoBasEnd", {
-//                defaultDuration: 1000,
-//                calls: [
-//                    [ { translateY: 1000                } ],
-//                    [ { opacity   : [0, 1]              } ],
-//                ]
-//            })
-             .RegisterEffect("hideIntro", {
-                defaultDuration: 1200,
-                calls: [
-                    [ { backgroundColor: '#ffffff' }, 0 ],
-                    [ { backgroundColor: '#dba8aa' }, 1.5 ],
-                    [ { backgroundColor: '#8bbabc' }, 1.5 ],
-                    [ { translateX: ['-100%', 0] }, 1, { easing: "easeOutExpo" } ],
-                    [ { opacity: [0, 1] } ],
-                ]
-            });
-
-        // APPELLE DES FONCTION
-        $(".contenerLoad svg").velocity("fadeOutSvg",   { delay: 3500 } );
-
-        $(".logoImgHaut").velocity("animationLogoHaut", { delay: 700 } );
-        $(".logoImgBas") .velocity("animationLogoBas",  { delay: 700 } );
-
-//        $(".logoImgHaut").velocity("animationLogoHautEnd", { delay: 750 } );
-//        $(".logoImgBas") .velocity("animationLogoBasEnd",  { delay: 750 } );
-
-        // REMOVE DIV :
-        $(".hideIntro").velocity("hideIntro").fadeOut(800, function(){
-            $(this).remove();
-        });
-
-        $(".contenerLoad").delay(4000).fadeOut(400, function(){
-            $(this).remove();
-        });
-
-
-    // VELOCITY 2 : EFFETS SUR LES LI DE LA NAV
     $('#vertical li').css("opacity","0");
 
     $.Velocity
@@ -91,15 +10,11 @@ $(document).ready(function() {
                 ]
         });
 
-    $("#vertical li").velocity("animationNav", { delay: 6000, stagger: 200 } );
-
-
+    $("#vertical li").velocity("animationNav", { delay: 5500, stagger: 200 } );
 });
 
-
 // HIDE / SHOW LA NAV AU SCROLL :
-$('#hautdepage, #horizontal').css("display","none");
-
+$('#hautdepage, #horizontal').css("display", "none");
 $(window).scroll(function() {
     var posScroll = $(document).scrollTop();
 
@@ -115,13 +30,13 @@ $(window).scroll(function() {
      e.preventDefault();
 
      var hash = this.hash.substr(1);
-     console.log(hash);
 
      $('html, body').animate({
     scrollTop: $("#"+ hash).offset().top + 8
      }, 1200);
 
  });
+
 
 // GESTION DE L'EFFET HOVER AUTOMATIQUE DE LA NAV :
 var aChildren = $(".link-hover").children();
@@ -188,7 +103,6 @@ $(window).scroll(function (){
             $(".containerBar .bar:eq("+i+") i").css("color", "#fff");
             $(".containerBar .bar:eq("+i+") .check").css("opacity", "1");
         }
-        console.log(i);
         $(".containerBar .bar:eq("+i+") span").css("width", percent + "%");
     });
 });

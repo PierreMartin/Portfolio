@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 $messageInfo = '';
 
@@ -8,10 +7,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 } else {
     $messageInfo = $_SESSION['messageInfo'];
 }
-
-
 ?>
-
 
 <!DOCTYPE HTML>
 <html lang="fr">
@@ -47,9 +43,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/liquid-slider.css">
 
-    <style type="text/css" media="screen">
-        @import url("css/media_queries.css");
-    </style>
+    <style type="text/css" media="screen">@import url("css/media_queries.css");</style>
 
     <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
 
@@ -65,7 +59,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <!--[if lte IE 8]>
         <link href="css/ie.css" rel="stylesheet" type="text/css">
     <![endif]-->
-
 
 </head>
 
@@ -89,11 +82,8 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <![endif]-->
 
 
-
-
     <!-- SI ANCIEN NAVIGATEUR IE, ALORS ON AFFICHE RIEN DU SITE :-->
     <!--[if (!IE 8) & (!IE 7) & (!IE 6)]><!-->
-
 
     <!-- INTRO -->
     <div class="hideIntro"></div>
@@ -271,19 +261,76 @@ if ( !isset($_SESSION['messageInfo']) ) {
                 <path class="p2HautPath" clip-path="url(#p2HautPath)" fill="none" stroke="#DD5754" stroke-width="120" stroke-miterlimit="10" d="M1010.267,493.233
                     c14-42,62-96,48-146c-12-44-72-70-112-74c-36-4-94-8-126,6c-44,18-80,62-112,96"/>
 
-
-
-
-
-
-
-
-
         </svg>
 
     </div>
-    <!-- FIN INTRO -->
 
+    <script src="bower_components/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
+    <script src="js/velocity.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            // EN MODE DEVELOPPEMENT; ON DESACTIVE L'INTRO :
+            // $(".hideIntro").remove();
+
+            $('.contenerLoad').fadeIn(1000);
+
+            $.Velocity
+                .RegisterEffect("fadeOutSvg", {
+                    defaultDuration: 200,
+                    calls: [
+                        [ { opacity: [0, 1] } ]
+                    ]
+                })
+                .RegisterEffect("animationLogoHaut", {
+                    defaultDuration: 1500,
+                    calls: [
+                        [ { translateY: -1000               }, 0 ],
+                        [ { opacity   : [1, 0]              }, 0 ],
+                        [ { translateY: 0                   }, 0.150 ],
+                        [ { translateY: -15, scaleY: 0.9    }, 0.100 ],
+                        [ { translateY: 0,   scaleY: 1      }, 0.100 ]
+                    ]
+                })
+                .RegisterEffect("animationLogoBas", {
+                    defaultDuration: 1500,
+                    calls: [
+                        [ { translateY: 1000                }, 0 ],
+                        [ { opacity   : [1, 0]              }, 0 ],
+                        [ { translateY: 0                   }, 0.150 ],
+                        [ { translateY: 15,  scaleY: 0.9    }, 0.100 ],
+                        [ { translateY: 0,   scaleY: 1      }, 0.100 ]
+                    ]
+                })
+                .RegisterEffect("hideIntro", {
+                    defaultDuration: 1200,
+                    calls: [
+                        [ { backgroundColor: '#ffffff' }, 0 ],
+                        [ { backgroundColor: '#dba8aa' }, 1.5 ],
+                        [ { backgroundColor: '#8bbabc' }, 1.5 ],
+                        [ { translateX: ['-100%', 0] }, 1, { easing: "easeOutExpo" } ],
+                        [ { opacity: [0, 1] } ]
+                    ]
+                });
+
+            // Appel des fonctions de Velocity :
+            $(".contenerLoad svg").velocity("fadeOutSvg",   { delay: 3500 } );
+
+            $(".logoImgHaut").velocity("animationLogoHaut", { delay: 700 } );
+            $(".logoImgBas") .velocity("animationLogoBas",  { delay: 700 } );
+
+            // REMOVE DIV :
+            $(".hideIntro").velocity("hideIntro").fadeOut(800, function(){
+                $(this).remove();
+            });
+
+            $(".contenerLoad").delay(4000).fadeOut(400, function(){
+                $(this).remove();
+            });
+        });
+    </script>
+    
+    <!-- FIN INTRO -->
 
 	<nav id="horizontal" class="transitionmenu">
         <div class="containerBar">
@@ -329,9 +376,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         </ul>
     </nav>
 
-
  	<div id="fondheader">
-
     	<div id="video_container">
             <video id="video_background" loop>
                 <source src="http://pierredesigner.com/videos/video2.webm" type="video/webm" />
@@ -346,60 +391,46 @@ if ( !isset($_SESSION['messageInfo']) ) {
             }, 7000);
         </script>
 
-
     	<div id="conteneur">
-                <header>
+            <header>
 
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                        	<a href="CV-Pierre.pdf" target="_blank" title="CV à télécharger !">
-                            	<div class="front"><!-- front content -->
-                            	 	<img src="img/logoFull.png" title="CV à télécharger !" alt="CV à télécharger !">
-                            	</div>
-                            </a>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <a href="CV-Pierre.pdf" target="_blank" title="CV à télécharger !">
+                            <div class="front"><!-- front content -->
+                                <img src="img/logoFull.png" title="CV à télécharger !" alt="CV à télécharger !">
+                            </div>
+                        </a>
 
-                            <div class="back"> <!-- back content -->
-                              	<a href="CV-Pierre.pdf" target="_blank"></a>
-                          </div>
-                        </div>
+                        <div class="back"> <!-- back content -->
+                            <a href="CV-Pierre.pdf" target="_blank"></a>
+                      </div>
                     </div>
+                </div>
 
-                </header>
+            </header>
 
-                <nav id="vertical" class="cachemobile">
-                    <ul>
-                        <li><a class="btn btn_web" href="#ancre_websites" id="websites2" title="Websites et Mailings">Websites</a></li>
-                        <li><a class="btn btn_graph" href="#ancre_graph" id="graphismes2" title="Graphismes et llustrations">Graphismes</a></li>
-                        <li><a class="btn btn_anim" href="#ancre_anim" id="anim2" title="Animation / Flash">Animations</a></li>
-                        <li><a class="btn btn_bio" href="#ancre_bio" id="biographie2" title="Biographie">A propos</a></li>
-                        <li><a class="btn btn_con" href="#ancre_contact" id="contact2" title="Contact">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav id="vertical" class="cachemobile">
+                <ul>
+                    <li><a class="btn btn_web" href="#ancre_websites" id="websites2" title="Websites et Mailings">Websites</a></li>
+                    <li><a class="btn btn_graph" href="#ancre_graph" id="graphismes2" title="Graphismes et llustrations">Graphismes</a></li>
+                    <li><a class="btn btn_anim" href="#ancre_anim" id="anim2" title="Animation / Flash">Animations</a></li>
+                    <li><a class="btn btn_bio" href="#ancre_bio" id="biographie2" title="Biographie">A propos</a></li>
+                    <li><a class="btn btn_con" href="#ancre_contact" id="contact2" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
 
+            <article id="articletop">
+                <br>
+                <h1>Pierre Martin</h1>
+                <p class="big_texte text-shadow_vert">FRONT-END DEVELOPER / MOTION DESIGNER / WEB DESIGNER</p>
+                <br>
+                <span id="sroll">scroll - faire défiler</span>
+                <br>
 
-                <article id="articletop">
-                    <br>
-                    <h1>Pierre Martin</h1>
-                    <p class="big_texte text-shadow_vert">FRONT-END DEVELOPER / MOTION DESIGNER / WEB DESIGNER</p>
-                    <br>
-                    <span id="sroll">scroll - faire défiler</span>
-                    <br>
-
-                    <img id="animate2" src="img/scroll.png" alt="faire défiller">
-                </article>
-
-
-
-<!--
-                <aside class="cachemobile">
-                    <div id="asidetest"></div>
-                </aside>
--->
-
-           </div>
-
-
-
+                <img id="animate2" src="img/scroll.png" alt="faire défiller">
+            </article>
+        </div>
     </div>
     <div id="fondheaderbottom"></div>
 
@@ -408,7 +439,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         <h1>Websites</h1>
 
         <!-- PROJET E-Star Wars -->
-        <!--<div class="siteContainer project-starswar">
+        <div class="siteContainer project-starswar">
             <div class="siteText">
                 <h2>E-Star Wars</h2>
                 <p><strong>A propos du projet :</strong><br> Conception et réalisation d'un site e-commerce</p>
@@ -419,7 +450,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
             <a href="http://pierredesigner.com/sites/starswars/" target="_blank"><div class="fullSize"></div></a>
-        </div>-->
+        </div>
 
         <!-- PROJET GMAP -->
         <div class="siteContainer project-gmap">
@@ -518,8 +549,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <div class="siteRight"></div>
             <a href="http://acv-calais.fr/" target="_blank"><div class="fullSize"></div></a>
         </div>
-
-
 
 
         <article class="articlebody">
@@ -642,12 +671,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                       <img src="img_slide/fiole.jpg" alt="fiole">
                  </div>
 
-
-
             </div> <!-- slider-id -->
-
-
-
 
 
             <hr>
@@ -699,8 +723,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
             </div> <!-- slider-id3 -->
 
-
-
 <!--
                 <section class="conteneur_sections1">
                     <section class="boite">
@@ -722,7 +744,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     </section>
                 </section>
 -->
-
         </article> <!-- articlebody -->
     </div>  <!-- fond3 -->
 
@@ -822,7 +843,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     </fieldset>
                 </form>
 
-
             </article>
 
         </section>
@@ -847,7 +867,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
           		    <a href="#ancre_contact">Contact</a>
           		</div>
 
-
                 <div class="containerSocial">
                     <a class="linkedin" href="https://fr.linkedin.com/in/pierredesigner" target="_blank" title="linkedin">
                         <i class="fa fa-linkedin-square"></i>
@@ -866,10 +885,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     </a>
                 </div>
 
-
-
-
-
                 <p class="texte_copyright">COPYRIGHT © 2015 PIERRE MARTIN. ALL RIGHTS RESERVED.</p>
         </footer>
 
@@ -883,14 +898,8 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
     <!--<![endif]--> <!-- FIN DES ANCIENS NAVIGATEUR IE -->
 
-<!-- ====================== SCRIPTS ====================== -->
 
-    <!--<script type="text/javascript" src="jquery-1.9.1.min.js"></script>-->
-    <script src="bower_components/jquery/jquery.min.js" type="text/javascript"></script>
-<!--    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>-->
-    <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
-    <script src="js/velocity.js" type="text/javascript"></script>
-
+    <!-- ====================== SCRIPTS ====================== -->
 
     <!-- SCROLLING -->
     <script src="js/smooth-scroll.js"></script>
@@ -900,7 +909,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <script src="./js/jquery.liquid-slider.min.js"></script>
 
     <!-- MAIN JS -->
-    <script src="intro/script.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <!-- FLASH -->
@@ -973,7 +981,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         })();
     </script>
 
-<!-- GOOGLE MAP API -->
+    <!-- GOOGLE MAP API -->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript">
         function initialize() {
@@ -1036,14 +1044,10 @@ if ( !isset($_SESSION['messageInfo']) ) {
             // Création de la carte
             var myMap = new google.maps.Map(document.getElementById('map-canvas'),myMapOptions);
 
-            // Création du marker (l'icône)
-            var myMarkerImage = new google.maps.MarkerImage('img/google_marker.png');
-
             // Création du marker
             var myMarker = new google.maps.Marker({
                 position: myLatlng,
                 map: myMap,
-                icon: myMarkerImage, // Appel de l'icon
                 title: "Pierre Webdesigner"
             });
 
@@ -1065,7 +1069,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
             // STYLES
              myMap.mapTypes.set('map_style', styledMap);
              myMap.setMapTypeId('map_style');
-
 
         }
         google.maps.event.addDomListener(window, 'load', initialize);
