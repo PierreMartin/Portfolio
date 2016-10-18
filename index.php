@@ -15,9 +15,9 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- META -->
-    <title>Pierre Martin | Graphic Design / Web Design &amp; UX Designe</title>
-    <meta name="description" content="Portfolio de Pierre Martin | Front-end Developer / Webdesigner / Web Design et Illustration">
-    <meta name="keywords" content="Portfolio, Pierre Martin, Graphic Design, Webdesigner, Web, Design, Illustration">
+    <title>Pierre Martin | Front-end Developer &amp; Javascript Developer</title>
+    <meta name="description" content="Pierre Martin | Front-end Developer / Javascript Developer">
+    <meta name="keywords" content="Pierre Martin">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -423,9 +423,9 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <article id="articletop">
                 <br>
                 <h1>Pierre Martin</h1>
-                <p class="big_texte text-shadow_vert">FRONT-END DEVELOPER / MOTION DESIGNER / WEB DESIGNER</p>
+                <p class="big_texte text-shadow_vert">FRONT-END DEVELOPER / JAVASCRIPT DEVELOPER</p>
                 <br>
-                <span id="sroll">scroll - faire défiler</span>
+                <!--<span id="sroll">scroll - faire défiler</span>-->
                 <br>
 
                 <img id="animate2" src="img/scroll.png" alt="faire défiller">
@@ -583,7 +583,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             </ul><!-- /Fin galerie jQuery -->
 
 
-			<section class="conteneur_sections1">
+			<!--<section class="conteneur_sections1">
 				<section class="boite">
 					<img src="img/web.png" alt="website">
 					<h3 class="texte_sites_sm">WEBSITE</h3>
@@ -602,79 +602,16 @@ if ( !isset($_SESSION['messageInfo']) ) {
 					<p class="texte_sites_sm">Adaptation sur mobiles & tablettes, mobile design</p>
 				</section>
 
-            </section>
+            </section>-->
 
         </article>
     </div>
 
     <div id="fond2bottom"></div>
 
-
 	<div class="fond3 percentDiv" id="ancre_graph">
     	<article class="articlebody">
             <h1>Graphismes</h1>
-            <h2 class="textestyle2">Réalisations personnelles :</h2>
-
-            <div class="liquid-slider" id="slider-id"> <!-- slider-id -->
-
-                 <div>
-                      <h2 class="title">1</h2>
-                      <p>Réalisation de mon dépliant - recto (format A4)</p>
-                      <img src="img_slide/pierre_flyer1.jpg" alt="Réalisation de mon dépliant - recto (format A4)">
-                 </div>
-
-				 <div>
-                      <h2 class="title">2</h2>
-                      <p>Réalisation de mon dépliant - verso (format A4)</p>
-                      <img src="img_slide/pierre_flyer2.jpg" alt="Réalisation de mon dépliant - verso (format A4)">
-                 </div>
-
-				 <div>
-                      <h2 class="title">3</h2>
-                      <p>Réalisation d'un affiche pour la société Ad4screen</p>
-                      <img src="img_slide/ad4screen.jpg" alt="Réalisation d'un affiche pour la société Ad4screen">
-                 </div>
-
-				 <div>
-                      <h2 class="title">4</h2>
-                      <p>Réalisation d'une maquette d'une newsletter pour la société Lydia</p>
-                      <img src="img_slide/lydia.jpg" alt="Réalisation d'une maquette d'une newsletter pour la société Lydia">
-                 </div>
-
-                 <div>
-                      <h2 class="title">5</h2>
-                      <p>Perroquet</p>
-                      <img src="img_slide/PerroquetV3.jpg" alt="Perroquet">
-                 </div>
-
-                 <div>
-                      <h2 class="title">6</h2>
-                      <p>3D effet</p>
-                      <img src="img_slide/3dfx2.jpg" alt="3D effet 1">
-                 </div>
-
-                 <div>
-                      <h2 class="title">7</h2>
-                      <p>3D effet</p>
-                      <img src="img_slide/3dfx3.jpg" alt="3D effet 1">
-                 </div>
-
-                 <div>
-                      <h2 class="title">8</h2>
-                      <p>Réalisation affiche et guitare en vectoriel</p>
-                      <img src="img_slide/affiche_Guitare.jpg" alt="affiche guitare">
-                 </div>
-
-                 <div>
-                      <h2 class="title">9</h2>
-                      <p>Réalisation fiole en vectoriel</p>
-                      <img src="img_slide/fiole.jpg" alt="fiole">
-                 </div>
-
-            </div> <!-- slider-id -->
-
-
-            <hr>
             <h2 class="textestyle2">Réalisations pour la société "Silicon Carne"</h2>
 
             <div class="liquid-slider" id="slider-id3"> <!-- slider-id3 -->
@@ -721,29 +658,13 @@ if ( !isset($_SESSION['messageInfo']) ) {
                       <img src="img_slide/sc_roue_popup.jpg" alt="Réalisation stage Silicon Carne Paris">
                  </div>
 
+                 <div>
+                      <h2 class="title">8</h2>
+                      <p>Réalisation fiole en vectoriel</p>
+                      <img src="img_slide/fiole.jpg" alt="fiole">
+                 </div>
+
             </div> <!-- slider-id3 -->
-
-<!--
-                <section class="conteneur_sections1">
-                    <section class="boite">
-                        <img src="img/print.png" alt="Print">
-                        <h3>PRINT</h3>
-                        <p>flyers, affiches, brochures, cartes de visites...</p>
-                    </section>
-
-                    <section class="boite">
-                        <img src="img/photo.png" alt="photos">
-                        <h3>PHOTOGRAPHIE</h3>
-                        <p>Montages photos, mattes-paintings, retouche photos...</p>
-                    </section>
-
-                    <section class="boite">
-                        <img src="img/picto.png" alt="pictogrammes">
-                        <h3>PICTOGRAMME</h3>
-                        <p>Identité visuelle, logos, illustrations, pictogrammes, objets vectoriels...</p>
-                    </section>
-                </section>
--->
         </article> <!-- articlebody -->
     </div>  <!-- fond3 -->
 
@@ -759,7 +680,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
             <div class="flash_conteneur">
 
-            	<h3 class="textestyle2">Réalisation Silicon Carne </h3>
+            	<h3 class="textestyle2">Réalisation Silicon Carne</h3>
                 <div id="flash_noel">
                     <a href="http://www.adobe.com/go/getflash">
                         <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir Adobe Flash Player" />
@@ -789,16 +710,16 @@ if ( !isset($_SESSION['messageInfo']) ) {
         <h1>A propos</h1>
     	<article class="articlebody">
    	    	<section style="text-align: center;">
-                <p class="textestyle1">Je m'appelle <span class="textestyle4">Pierre MARTIN</span>, j'ai 28 ans.
-                    <br>je suis <span class="textestyle4">designer créatif</span> et <span class="textestyle4">développeur intéractif front-end</span>.
-                    <br>Reçu avec succès au sortir d’une école <span class="textestyle4">« Développeur Multimédia »</span>, je possède une expérience professionnelle effectuée en alternance sur Symfony, Laravel, jQuery...
-                    <br>Passionné, autonome, je possède une bonne culture web et j’ai l’esprit d’équipe que j’ai acquis en travaillant en startup en faisant face à de nombreux nouveaux challenges technologiques.
+                <p class="textestyle1">
+                    Je m'appelle <span class="textestyle4">Pierre MARTIN</span>.
+                    <br>Je suis <span class="textestyle4">développeur front-end / Javascript</span>.
+                    <br>Reçu avec succès au sortir d’une école <span class="textestyle4">« Développeur Multimédia »</span>, je possède une expérience professionnelle effectuée en alternance.
+
                     <br>
+                    <br>Passionné, autonome, je possède une bonne culture web, une bonne sensibilité UX, une forte expérience en algorithme et j’ai l’esprit d’équipe que j’ai acquis en travaillant en startup en faisant face à de nombreux nouveaux challenges technologiques.
                 </p>
 
-                <hr><br>
-
-                <a class="btn btn_graph" href="formation.pdf" target="_blank" id="websites2" title="Contenu de ma fomation">Voir le contenu de ma précédente formation !</a>
+                <!--<a class="btn btn_graph" href="formation.pdf" target="_blank" id="websites2" title="Contenu de ma fomation">Voir le contenu de ma précédente formation !</a>-->
             </section>
 
 		</article>
@@ -810,10 +731,11 @@ if ( !isset($_SESSION['messageInfo']) ) {
 	<div class="fond5" id="ancre_contact">
     	<div class="percentDivLast percentDiv"></div>
     	<h1>Contact</h1>
+
         <section>
-            <p class="textestyle1">Vous avez besoin d'un renseignement, vous avez envie de me proposer votre projet ou de me rencontrer ?
-            N'hésitez pas à me contacter via le formulaire ci-dessous.</p>
+            <p class="textestyle1">Vous avez besoin d'un renseignement, vous avez envie de me proposer votre projet ou de me rencontrer ? N'hésitez pas à me contacter via le formulaire ci-dessous.</p>
         </section>
+
 
         <section id="mapgoogle" >
 
@@ -876,16 +798,16 @@ if ( !isset($_SESSION['messageInfo']) ) {
                         <i class="fa fa-twitter-square"></i>
                     </a>
 
-                    <a class="facebook" href="https://www.facebook.com/pierre.mrt.5?ref=tn_tnmn/" target="_blank" title="Facebook">
+                    <!--<a class="facebook" href="https://www.facebook.com/pierre.mrt.5?ref=tn_tnmn/" target="_blank" title="Facebook">
                         <i class="fa fa-facebook-official"></i>
-                    </a>
+                    </a>-->
 
                     <a class="github" href="https://github.com/PierreMartin" target="_blank" title="github">
                         <i class="fa fa-github-square"></i>
                     </a>
                 </div>
 
-                <p class="texte_copyright">COPYRIGHT © 2015 PIERRE MARTIN. ALL RIGHTS RESERVED.</p>
+                <p class="texte_copyright">COPYRIGHT © 2016 PIERRE MARTIN. ALL RIGHTS RESERVED.</p>
         </footer>
 
         <div id="hautdepage">
