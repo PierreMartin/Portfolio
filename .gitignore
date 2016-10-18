@@ -1,7 +1,10 @@
 /node_modules
+node_modules
 /bower_components
 CV-pierre.pdf
 .DS_Store
 *.swf
 *.ico
+/_assets
+.idea
 

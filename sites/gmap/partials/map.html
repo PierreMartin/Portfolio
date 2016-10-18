@@ -1,0 +1,43 @@
+<div class="mapContainer">
+    <div id="map"></div>
+    <div class="markers">
+        <ul class="markers_ul">
+            <li ng-repeat="marker in markers" class="markers_li">
+                <div ng-mouseenter="openInfoWindow($event, marker)">
+                    <h3 class="markerTitle">{{ marker.title_raw }}</h3>
+                    <div class="container_infos">
+                        <div class="markerDescib">{{ marker.date }}</div>
+                        <div class="markerDescib">{{ marker.city }}</div>
+
+                        <div class="markerDescib prices">
+                            <ul class="price_ul" ng-repeat="route in marker.routes | orderBy:'cost.price_value' ">
+                                <li class="price_li">
+                                    <span ng-show="route.cost">
+                                        Prix :
+                                        <span ng-hide="route.cost.price_value == '0'">{{ route.cost.price_value }} €</span>
+                                        <span ng-show="route.cost.price_value == '0'">gratuit</span>
+                                        pour
+                                    </span>
+                                    {{ route.distance }} Km
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="bloc1">
+    <article class="container">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto est facilis officia vitae. Ab consequuntur corporis cumque, eius illum ipsam magni obcaecati odit recusandae repellat saepe sit voluptate voluptates!</p>
+            </div>
+
+        </div>
+    </article>
+
+</section>
