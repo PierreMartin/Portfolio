@@ -717,6 +717,9 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
                     <br>
                     <br>Passionné, autonome, je possède une bonne culture web, une bonne sensibilité UX, une forte expérience en algorithme et j’ai l’esprit d’équipe que j’ai acquis en travaillant en startup en faisant face à de nombreux nouveaux challenges technologiques.
+
+                    <br>
+                    <br>Je ne suis PAS A L'ECOUTE DU MARCHE (cdd, cdi, freelance), merci de ne pas me proposer des opportunités.
                 </p>
 
                 <!--<a class="btn btn_graph" href="formation.pdf" target="_blank" id="websites2" title="Contenu de ma fomation">Voir le contenu de ma précédente formation !</a>-->
@@ -733,7 +736,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
     	<h1>Contact</h1>
 
         <section>
-            <p class="textestyle1">Vous avez besoin d'un renseignement, vous avez envie de me proposer votre projet ou de me rencontrer ? N'hésitez pas à me contacter via le formulaire ci-dessous.</p>
+            <p class="textestyle1">Vous avez besoin d'un renseignement ? N'hésitez pas à me contacter via le formulaire ci-dessous.</p>
         </section>
 
 
