@@ -334,45 +334,15 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
 	<nav id="horizontal" class="transitionmenu">
         <div class="containerBar">
-            <div class="bar">
-                <i class="fa fa-circle" style=""></i>
-                <span style=""></span>
-            </div><!--
-         --><div class="bar">
-                <i class="fa fa-circle" style=""></i>
-                <span style=""></span>
-            </div><!--
-         --><div class="bar">
-                <i class="fa fa-circle" style=""></i>
-                <span style=""></span>
-            </div><!--
-         --><div class="bar">
-                <i class="fa fa-circle" style=""></i>
-                <span style=""></span>
-            </div><!--
-         --><div class="bar">
-                <i class="fa fa-check check" style=""></i>
-                <span style=""></span>
-            </div>
+            <div class="bar"><i class="fa fa-circle" style=""></i><span style=""></span></div><!--
+         --><div class="bar"><i class="fa fa-circle" style=""></i><span style=""></span></div><!--
+         --><div class="bar"><i class="fa fa-circle" style=""></i><span style=""></span></div>
         </div>
 
-
         <ul>
-            <li class="link-hover">
-                <a href="#ancre_websites" id="websites" title="Websites et Mailings">Websites</a>
-            </li><!--
-         --><li class="link-hover">
-                <a href="#ancre_graph" id="graphismes" title="Graphismes et llustrations">Graphismes</a>
-            </li><!--
-         --><li class="link-hover">
-                <a href="#ancre_anim" id="anim" title="Animations / Flash">Animations</a>
-            </li><!--
-         --><li class="link-hover">
-                <a href="#ancre_bio" id="biographie" title="Biographie">A propos</a>
-            </li><!--
-         --><li class="link-hover">
-                <a href="#ancre_contact" id="contact" title="Contact">Contact</a>
-            </li>
+            <li class="link-hover"><a href="#ancre_websites" id="websites" title="Websites et Mailings">Websites</a></li><!--
+         --><li class="link-hover"><a href="#ancre_graph" id="graphismes" title="Graphismes et llustrations">Graphismes</a></li><!--
+         --><li class="link-hover"><a href="#ancre_bio" id="biographie" title="Biographie">A propos</a></li>
         </ul>
     </nav>
 
@@ -414,9 +384,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                 <ul>
                     <li><a class="btn btn_web" href="#ancre_websites" id="websites2" title="Websites et Mailings">Websites</a></li>
                     <li><a class="btn btn_graph" href="#ancre_graph" id="graphismes2" title="Graphismes et llustrations">Graphismes</a></li>
-                    <li><a class="btn btn_anim" href="#ancre_anim" id="anim2" title="Animation / Flash">Animations</a></li>
                     <li><a class="btn btn_bio" href="#ancre_bio" id="biographie2" title="Biographie">A propos</a></li>
-                    <li><a class="btn btn_con" href="#ancre_contact" id="contact2" title="Contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -672,7 +640,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <div id="fond3bottom"></div>
 
 
-    <!-- ANIMATION FLASH -->
+    <!-- ANIMATION FLASH
     <div class="fond_anim percentDiv" id="ancre_anim">
     	<article class="articlebody">
             <h1>Animations</h1>
@@ -699,9 +667,9 @@ if ( !isset($_SESSION['messageInfo']) ) {
 
             </div>
 
-        </article> <!-- articlebody -->
+        </article>
     </div>
-
+    -->
 
     <div id="fond_anim_bottom"></div>
 
@@ -731,6 +699,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 	<div id="fond4bottom"></div>
 
 
+	<!--
 	<div class="fond5" id="ancre_contact">
     	<div class="percentDivLast percentDiv"></div>
     	<h1>Contact</h1>
@@ -745,7 +714,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
 			<div id="map-canvas"></div>
 
             <article class="articlebody articlebodymap">
-                <p class="conatainerMessageSend"><?php echo $messageInfo; ?></p>
+                <p class="conatainerMessageSend"><?php /*echo $messageInfo; */?></p>
                 <br>
 
                 <form action="form.php" method="post" enctype="application/x-www-form-urlencoded" name="formulaire_mailing" class="formular" id="formID">
@@ -773,6 +742,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         </section>
 
 	</div>
+    -->
 
 	<div id="fond5bottom"></div>
 
@@ -788,8 +758,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
           		    <a href="#ancre_graph">Graphismes</a>
           		    <span>|</span>
           		    <a href="#ancre_bio">A propos</a>
-          		    <span>|</span>
-          		    <a href="#ancre_contact">Contact</a>
           		</div>
 
                 <div class="containerSocial">
@@ -800,10 +768,6 @@ if ( !isset($_SESSION['messageInfo']) ) {
                     <a class="twitter" href="https://twitter.com/Pierredevparis?lang=fr" target="_blank" title="Twitter">
                         <i class="fa fa-twitter-square"></i>
                     </a>
-
-                    <!--<a class="facebook" href="https://www.facebook.com/pierre.mrt.5?ref=tn_tnmn/" target="_blank" title="Facebook">
-                        <i class="fa fa-facebook-official"></i>
-                    </a>-->
 
                     <a class="github" href="https://github.com/PierreMartin" target="_blank" title="github">
                         <i class="fa fa-github-square"></i>
@@ -836,7 +800,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
     <!-- MAIN JS -->
     <script type="text/javascript" src="js/main.js"></script>
 
-    <!-- FLASH -->
+    <!-- FLASH
     <script type="text/javascript" src="js/swfobject.js"></script>
 
     <script type="text/javascript">
@@ -887,27 +851,11 @@ if ( !isset($_SESSION['messageInfo']) ) {
         attributesJeu.align        = "middle";
         swfobject.embedSWF("anim_jeu.swf", "flash_tlm3", "290", "180", swfVersionStr, xiSwfUrlStr, flashvars, params, attributesJeu);
     </script>
+    -->
 
-
-    <!-- GOOGLE ANALYTICS -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-45695346-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-
-    <!-- GOOGLE MAP API -->
+    <!-- GOOGLE MAP API
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
     <script type="text/javascript">
         function initialize() {
             var styles =
@@ -994,11 +942,28 @@ if ( !isset($_SESSION['messageInfo']) ) {
             // STYLES
              myMap.mapTypes.set('map_style', styledMap);
              myMap.setMapTypeId('map_style');
-
         }
+
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    -->
 
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-45695346-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 
 </body>
 </html>
