@@ -357,6 +357,12 @@ footer {
 .siteContainer .siteText span  { font-size: 0.8em; text-shadow: none; }
 
 /* WEB : CHARGEMENT IMAGES */ /* 1200 X 270 */
+.project-studento            { background-color: #141619; }
+.project-studento .siteLeft  { background: url(../projets_web/studento-g.jpg) right no-repeat; }
+.project-studento .siteRight { background: url(../projets_web/studento-d.jpg) left no-repeat; }
+.project-studento .siteText  { background-color: #141619; margin: 0 auto; padding-top: 10px; }
+.project-studento .siteText h2, .project-studento .siteText p, .project-studento .siteText span { color: #fff !important; }
+
 .project-pokemon            { background-color: #222222; }
 .project-pokemon .siteLeft  { background: url(../projets_web/pokemon-g.jpg) right no-repeat; }
 .project-pokemon .siteRight { background: url(../projets_web/pokemon-d.jpg) left no-repeat; }

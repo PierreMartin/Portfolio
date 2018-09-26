@@ -195,13 +195,21 @@ $(document).ready(function(){
     });
 
     var elementsHover= function () {
-        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-pokemon .fullSize, .project-gmap .fullSize").addClass("webHover");
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-pokemon .fullSize, .project-studento .fullSize, .project-gmap .fullSize").addClass("webHover");
     };
 
     var elementsOut = function () {
-        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-pokemon .fullSize, .project-gmap .fullSize").removeClass("webHover");
+        $(".project-felt .fullSize, .project-jld .fullSize, .project-aps .fullSize, .project-doreuse .fullSize, .project-matsuoka .fullSize, .project-acv .fullSize, .project-pokemon .fullSize, .project-studento .fullSize, .project-gmap .fullSize").removeClass("webHover");
     };
 
+		// Studento
+		$( ".project-studento" ).mouseover(function() {
+				elementsHover();
+				$(".project-studento .fullSize").removeClass("webHover");
+		});
+		$( ".project-studento").mouseout(function() {
+				elementsOut();
+		});
 
     // pokemon
     $( ".project-pokemon" ).mouseover(function() {

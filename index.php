@@ -406,11 +406,25 @@ if ( !isset($_SESSION['messageInfo']) ) {
 	<div class="fond2 percentDiv" id="ancre_websites">
         <h1>Websites</h1>
 
+        <!-- PROJET Studento -->
+        <div class="siteContainer project-studento">
+            <div class="siteText">
+                <h2>Studento</h2>
+                <p><strong>A propos du projet :</strong><br>Développement d'un réseau social permettant aux utilisateurs de partager leurs cours ou leurs nouvelles connaissance / des astuces</p>
+                <span><strong>Environnement de travail : </strong>Freelance</span>
+                <br>
+                <span><strong>Technologies utilisées : </strong>NodeJs, Express, MongoDB, React, Redux, SocketIO, AWS S3</span>
+            </div>
+            <div class="siteLeft"></div>
+            <div class="siteRight"></div>
+            <a href="https://studento.herokuapp.com" target="_blank"><div class="fullSize"></div></a>
+        </div>
+
         <!-- PROJET Pokemon -->
         <div class="siteContainer project-pokemon">
             <div class="siteText">
                 <h2>Pokemon Stars Rating</h2>
-                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'une application web dynamique permettant de noter des Pokemons.</p>
+                <p><strong>A propos du projet :</strong><br> Conception et réalisation d'une app permettant de noter des Pokemons.</p>
                 <span><strong>Environnement de travail : </strong>Freelance</span>
                 <br>
                 <span><strong>Technologies utilisées : </strong>Node.js, MongoDB, React et Flux (pour l'architecture + le rendu coté serveur)</span>
@@ -708,37 +722,9 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <p class="textestyle1">Vous avez besoin d'un renseignement ? N'hésitez pas à me contacter via le formulaire ci-dessous.</p>
         </section>
 
-
         <section id="mapgoogle" >
-
 			<div id="map-canvas"></div>
-
-            <article class="articlebody articlebodymap">
-                <p class="conatainerMessageSend"><?php /*echo $messageInfo; */?></p>
-                <br>
-
-                <form action="form.php" method="post" enctype="application/x-www-form-urlencoded" name="formulaire_mailing" class="formular" id="formID">
-
-                    <fieldset>
-                        <input type="hidden" name="hidden" id="securite">
-
-                        <input type="text" name="nom" id="nom" size="30" maxlength="50" placeholder="Nom" autocomplete="off" required>
-                        <br>
-                        <input type="text" name="prenom" id="prenom" size="30" maxlength="50" placeholder="Prenom" autocomplete="off" required>
-                        <br>
-                        <input type="email" name="email" id="mail" size="30" maxlength="50" placeholder="Adresse mail" autocomplete="off" required>
-                        <br>
-
-                        <textarea name="message" cols="20" rows="6" maxlength="800" placeholder="Votre message" autocomplete="off" required></textarea>
-                    </fieldset>
-
-                    <fieldset class="center">
-                        <input name="envoyer" type="submit" class="bouton" title="Envoyer" value="ENVOYER">
-                    </fieldset>
-                </form>
-
-            </article>
-
+            <article class="articlebody articlebodymap"></article>
         </section>
 
 	</div>
