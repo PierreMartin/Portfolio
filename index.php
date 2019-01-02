@@ -431,7 +431,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
-            <a href="http://51.254.120.16:3000" target="_blank"><div class="fullSize"></div></a>
+            <a href="https://pokemonrating.herokuapp.com/" target="_blank"><div class="fullSize"></div></a>
         </div>
 
         <!-- PROJET GMAP -->
