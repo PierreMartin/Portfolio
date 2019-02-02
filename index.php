@@ -417,7 +417,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
-            <a href="https://studento.herokuapp.com" target="_blank"><div class="fullSize"></div></a>
+            <a href="https://hubnote.app" target="_blank"><div class="fullSize"></div></a>
         </div>
 
         <!-- PROJET Pokemon -->
