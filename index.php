@@ -421,6 +421,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         </div>
 
         <!-- PROJET Pokemon -->
+        <!--
         <div class="siteContainer project-pokemon">
             <div class="siteText">
                 <h2>Pokemon Stars Rating</h2>
@@ -433,6 +434,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <div class="siteRight"></div>
             <a href="https://pokemonrating.herokuapp.com/" target="_blank"><div class="fullSize"></div></a>
         </div>
+        -->
 
         <!-- PROJET GMAP -->
         <!--<div class="siteContainer project-gmap">
@@ -478,6 +480,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         </div>
 
         <!-- SITE FELT -->
+        <!--
         <div class="siteContainer project-felt">
             <div class="siteText">
                 <h2>Felt Energy</h2>
@@ -490,6 +493,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <div class="siteRight"></div>
             <a href="http://pierredesigner.com/sites/felt/" target="_blank"><div class="fullSize"></div></a>
         </div>
+        -->
 
         <!-- SITE DOREUSE BLOIS -->
         <!--<div class="siteContainer project-doreuse">
