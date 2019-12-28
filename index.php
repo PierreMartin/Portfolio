@@ -435,7 +435,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
         </div>
 
         <!-- PROJET GMAP -->
-        <div class="siteContainer project-gmap">
+        <!--<div class="siteContainer project-gmap">
             <div class="siteText">
                 <h2>Google Map + Angular</h2>
                 <p><strong>A propos du projet :</strong><br> Conception et réalisation d'une carte interactive montrant des différentes courses</p>
@@ -447,6 +447,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <div class="siteRight"></div>
             <a href="http://pierredesigner.com/sites/gmap/#/" target="_blank"><div class="fullSize"></div></a>
         </div>
+        -->
 
         <!-- SITE APS -->
         <div class="siteContainer project-aps">
@@ -459,7 +460,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
-            <a href="http://pierredesigner.com/sites/aps/" target="_blank"><div class="fullSize"></div></a>
+            <a href="http://aps-export.com/" target="_blank"><div class="fullSize"></div></a>
         </div>
 
         <!-- SITE JLD -->
@@ -473,7 +474,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
-            <a href="http://pierredesigner.com/sites/jld/" target="_blank"><div class="fullSize"></div></a>
+            <a href="http://jld-consulting.com/" target="_blank"><div class="fullSize"></div></a>
         </div>
 
         <!-- SITE FELT -->
