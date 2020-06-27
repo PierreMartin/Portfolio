@@ -411,7 +411,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
             <div class="siteText">
                 <h2>HubNote</h2>
                 <p><strong>A propos du projet :</strong><br>HubNote est un réseau social qui permet de prendre et de partager des notes.</p>
-                <span><strong>Environnement de travail : </strong>Expériences personnelles</span>
+                <span><strong>Environnement de travail : </strong>Expérience personnelle</span>
                 <br>
                 <span><strong>Technologies utilisées : </strong>NodeJs, Passport.js, Express, MongoDB, React, Redux, SocketIO, AWS S3</span>
             </div>
