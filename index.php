@@ -406,14 +406,14 @@ if ( !isset($_SESSION['messageInfo']) ) {
 	<div class="fond2 percentDiv" id="ancre_websites">
         <h1>Websites</h1>
 
-        <!-- PROJET Studento -->
+        <!-- PROJET HubNote -->
         <div class="siteContainer project-studento">
             <div class="siteText">
-                <h2>Studento</h2>
-                <p><strong>A propos du projet :</strong><br>Développement d'un réseau social permettant aux utilisateurs de partager leurs cours ou leurs nouvelles connaissance / des astuces</p>
-                <span><strong>Environnement de travail : </strong>Freelance</span>
+                <h2>HubNote</h2>
+                <p><strong>A propos du projet :</strong><br>HubNote est un réseau social qui permet de prendre et de partager des notes.</p>
+                <span><strong>Environnement de travail : </strong>Expériences personnelles</span>
                 <br>
-                <span><strong>Technologies utilisées : </strong>NodeJs, Express, MongoDB, React, Redux, SocketIO, AWS S3</span>
+                <span><strong>Technologies utilisées : </strong>NodeJs, Passport.js Express, MongoDB, React, Redux, SocketIO, AWS S3</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
@@ -752,7 +752,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
           		</div>
 
                 <div class="containerSocial">
-                    <a class="linkedin" href="https://fr.linkedin.com/in/pierredesigner" target="_blank" title="linkedin">
+                    <a class="linkedin" href="https://www.linkedin.com/in/pierredev75" target="_blank" title="Linkedin">
                         <i class="fa fa-linkedin-square"></i>
                     </a>
 
@@ -760,7 +760,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                         <i class="fa fa-twitter-square"></i>
                     </a>
 
-                    <a class="github" href="https://github.com/PierreMartin" target="_blank" title="github">
+                    <a class="github" href="https://github.com/PierreMartin" target="_blank" title="Github">
                         <i class="fa fa-github-square"></i>
                     </a>
                 </div>
