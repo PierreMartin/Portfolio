@@ -413,7 +413,7 @@ if ( !isset($_SESSION['messageInfo']) ) {
                 <p><strong>A propos du projet :</strong><br>HubNote est un réseau social qui permet de prendre et de partager des notes.</p>
                 <span><strong>Environnement de travail : </strong>Expériences personnelles</span>
                 <br>
-                <span><strong>Technologies utilisées : </strong>NodeJs, Passport.js Express, MongoDB, React, Redux, SocketIO, AWS S3</span>
+                <span><strong>Technologies utilisées : </strong>NodeJs, Passport.js, Express, MongoDB, React, Redux, SocketIO, AWS S3</span>
             </div>
             <div class="siteLeft"></div>
             <div class="siteRight"></div>
